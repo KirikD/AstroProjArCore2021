@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: River - Waterfall Demo
+  m_Shader: {fileID: 4800000, guid: 67579408ee7935c4cb4d696e199fb762, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Displacement:
+        m_Texture: {fileID: 2800000, guid: 50bd9b68024b54f44aa74d2842bee3db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Foam:
+        m_Texture: {fileID: 2800000, guid: 4569f84b7d2064c48ad37bc2748ca835, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTexture:
+        m_Texture: {fileID: 2800000, guid: a0c55168c4eb26646a6bd97b7c8e4da0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BackFaceOpacity: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionAngle: 0.619
+    - _DisplacementFoamIntensity: 1
+    - _DisplacementFoamSpeed: 10.8
+    - _DisplacementIntensity: 0.25
+    - _DisplacementScale: 0.33
+    - _DistanceDistortionDepth: 9
+    - _DistanceDistortionIntensity: 0.44
+    - _DistortionX: 1
+    - _DistortionY: 1
+    - _DstBlend: 0
+    - _FoamDistance: 6
+    - _FoamIntensity: 0.7
+    - _FoamScale: 3.01
+    - _FoamSpeed: 33.4
+    - _Gloss: 0.25
+    - _Glossiness: 0.5
+    - _InverseReflection: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalIntensity: 1.4
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _ReflectionFresnel: 3
+    - _RefractinIntensity: 0.267
+    - _RefractionIntensity: 0.194
+    - _ScaleX: 1
+    - _ScaleY: 0.7
+    - _ShoreBlend: 3
+    - _ShoreWaterOpacity: 0.1
+    - _SpecularIntensity: 5
+    - _SrcBlend: 1
+    - _TessellationLevel: 1
+    - _UVSec: 0
+    - _UseReflection: 0
+    - _WaterDepth: 10
+    - _WaterFadeLevel: 14
+    - _WaterSpeed: 4.3
+    - _WavesFoamIntensity: 0.6
+    - _WavesFoamSpeed: 2.9
+    - _WavesFoamSpeedChange: 1
+    - _WavesScale: 0.26
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FakeReflectionColor: {r: 0.30201122, g: 0.39004293, b: 0.41911763, a: 1}
+    - _ReflectionColor: {r: 0.24243079, g: 0.33878735, b: 0.43382353, a: 1}
+    - _WaterColor: {r: 0.47577852, g: 0.68160254, b: 0.7352941, a: 1}

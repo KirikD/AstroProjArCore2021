@@ -1,0 +1,105 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 25.01.2019 20:11:49
+
+newmtl auter_core
+	Ns 23.0000
+	Ni 1.5000
+	d 0.8000
+	Tr 0.2000
+	Tf 0.8000 0.8000 0.8000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.3510 0.3510 0.3510
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Argun_ajil\eart structure\texturing\sola.jpg
+	map_Kd G:\Argun_ajil\eart structure\texturing\sola.jpg
+
+newmtl 03___Default
+	Ns 24.0000
+	Ni 1.5000
+	d 0.8000
+	Tr 0.2000
+	Tf 0.8000 0.8000 0.8000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.3960 0.3960 0.3960
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Argun_ajil\eart structure\texturing\sola - Copy.jpg
+	map_Kd G:\Argun_ajil\eart structure\texturing\sola - Copy.jpg
+
+newmtl 04___Default
+	Ns 25.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5000 0.5000 0.5000
+	Kd 0.5000 0.5000 0.5000
+	Ks 0.0450 0.0450 0.0450
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Argun_ajil\eart structure\texturing\lava-texture-red-small-stones-on-hot-brigh-dangerous-ground-warm-material-bright-color-seamless-image-512x512.jpg
+	map_Kd G:\Argun_ajil\eart structure\texturing\lava-texture-red-small-stones-on-hot-brigh-dangerous-ground-warm-material-bright-color-seamless-image-512x512.jpg
+	map_bump C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\lava-texture-red-small-stones-on-hot-brigh-dangerous-ground-warm-material-bright-color-seamless-image-512x512_NRM.png
+
+newmtl eart_tsul
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Argun_ajil\eart structure\texturing\earth_texture_map_1000px.jpg
+	map_Kd G:\Argun_ajil\eart structure\texturing\earth_texture_map_1000px.jpg
+	map_bump C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\earth_texture_map_1000px_NRM.png
+	bump C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\earth_texture_map_1000px_NRM.png
+
+newmtl 06___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0706 0.0275 0.0275
+	Kd 0.0706 0.0275 0.0275
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl inner_core
+	Ns 28.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.2070 0.2070 0.2070
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Argun_ajil\eart structure\texturing\images.jpg
+	map_Kd G:\Argun_ajil\eart structure\texturing\images.jpg
+	map_bump C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\images_NRM.png
+	bump C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\images_NRM.png
+
+newmtl 05___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\earth_texture_map_1000px.jpg
+	map_Kd C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\earth_texture_map_1000px.jpg
+	map_bump C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\earth_texture_map_1000px_NRM.png
+	bump C:\Users\Makulaa\Documents\3dsMax\export\eart_animation.fbm\earth_texture_map_1000px_NRM.png
