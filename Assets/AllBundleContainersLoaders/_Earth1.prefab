@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 108386888848017209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 108386889364265498}
@@ -374,13 +374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndicatorMeshTest: {fileID: 108386888848017215}
-  DebugTXT:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  DebugUniqueTXT: {fileID: 0}
   AnimPoint:
   - {fileID: 108386889472866373}
   - {fileID: 108386889936784809}
