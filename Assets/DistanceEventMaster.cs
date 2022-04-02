@@ -14,7 +14,9 @@ public class DistanceEventMaster : MonoBehaviour
     GameObject thisMainObj; // это главный обект этого маркера
     void Start()
     {
-      
+        string value = this.gameObject.name.Substring(0, this.gameObject.name.Length - 7);
+        this.gameObject.name = value; // убрали дурацкую надпись клоне
+
         thisMainObj = this.transform.GetChild(0).transform.gameObject;
 
         allMarkers = GameObject.FindGameObjectsWithTag("MarkerTarg") ;
@@ -22,12 +24,10 @@ public class DistanceEventMaster : MonoBehaviour
         {
             lightuser.GetComponent<DistanceEventMaster>().MarkerListUpdated();
         }
-        //DebugTXT[0].text ="" + allMarkers.Length;
-        IndicatorMeshTest.enabled = false;
+
+       // IndicatorMeshTest.enabled = false;
       
     }
-
-    /// /////////////////////////////////////////////
 
     public void MarkerListUpdated() // вызываем когда доп маркер появился в мире
     {
