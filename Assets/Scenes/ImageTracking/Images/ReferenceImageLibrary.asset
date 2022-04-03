@@ -28,7 +28,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11188119}
     m_SpecifySize: 1
     m_Name: S1_Earth
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: f696514a79cc94345b713a7edaa3f942, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 4900271838513796132
       m_GuidHigh: 17463302535566904507
@@ -38,7 +38,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.111725844}
     m_SpecifySize: 1
     m_Name: S2_Neptune
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 36109aa50ec9d5943b5be063456b5df5, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5472785749815780721
       m_GuidHigh: 3622008279098991268
@@ -48,7 +48,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11126645}
     m_SpecifySize: 1
     m_Name: S3_Solar
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 3dca49ac770691a4c9afa385f23cc237, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 4971885296832352268
       m_GuidHigh: 17793072381991857596
@@ -58,7 +58,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11153213}
     m_SpecifySize: 1
     m_Name: S4_Moon
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 69ca853cc211eac4597c48182ce4fe77, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 4965507300529490175
       m_GuidHigh: 3906823895439713442
@@ -68,7 +68,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.1119637}
     m_SpecifySize: 1
     m_Name: S5_Merkury
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 660c769175bb3fd49b5dae52c2db4c23, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5223105985925971195
       m_GuidHigh: 6288460673946070435
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11205615}
     m_SpecifySize: 1
     m_Name: S6_Venus
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 94fe6ec60231f484eb4555d341c27d65, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 4922219834533415974
       m_GuidHigh: 10389664433385456827
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11164327}
     m_SpecifySize: 1
     m_Name: S7_Mars
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 44f209c0ae11b834f8ff0f49157bcc7a, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5517720909546552029
       m_GuidHigh: 16373806597633193603
@@ -98,7 +98,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11173554}
     m_SpecifySize: 1
     m_Name: S8_Jupiter
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: cab497226d0cffe408cfeec0a86336ff, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5082890922004918460
       m_GuidHigh: 3994365248967885970
@@ -108,7 +108,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11192053}
     m_SpecifySize: 1
     m_Name: S9_Uran
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 018a56f865c3b364cb43baca50d487ca, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5451468487369236765
       m_GuidHigh: 4376768587307608243
@@ -118,7 +118,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11183638}
     m_SpecifySize: 1
     m_Name: S10_Saturn
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: fc27f480706de7e4e958a15bbd84065c, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5544202305770351751
       m_GuidHigh: 3026110963947649434
@@ -128,7 +128,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11146829}
     m_SpecifySize: 1
     m_Name: S11_SolarSustem
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: ac662f40b4710694e8d83aca3735949d, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5374926123556390841
       m_GuidHigh: 2973682087366675353
@@ -138,7 +138,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11147812}
     m_SpecifySize: 1
     m_Name: S12_BlackHolle
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 1fbd87656fbb81744b0f1e5d822e107d, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5235627846707159314
       m_GuidHigh: 16740922601214416808
@@ -148,7 +148,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11135972}
     m_SpecifySize: 1
     m_Name: S13_Cometa
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: f39d07935127b4c4f8f56636deb4880d, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 4879942101489920504
       m_GuidHigh: 4709893965812604808
@@ -158,7 +158,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.112007014}
     m_SpecifySize: 1
     m_Name: S14_Galaxy
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: cda11cd6ec02c1c4c9c9d7d7dbfd2a42, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5683321611006905764
       m_GuidHigh: 15997622617261292929
@@ -168,7 +168,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.11190083}
     m_SpecifySize: 1
     m_Name: S15_SuperNova
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 00c8cf9210bb09e4f9016e3d131e85c5, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5414385477463258992
       m_GuidHigh: 11317762766851481770

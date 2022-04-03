@@ -28,5 +28,4 @@ public class PrefabParenter : MonoBehaviour
     public GameObject ObjectsGameobj;
     public string name;
     // Update is called once per frame
-
 }

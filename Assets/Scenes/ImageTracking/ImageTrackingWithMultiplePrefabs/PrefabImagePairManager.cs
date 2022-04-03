@@ -75,7 +75,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
         void Awake()
         {
-            m_TrackedImageManager = GetComponent<ARTrackedImageManager>();
+            m_TrackedImageManager = GetComponent<ARTrackedImageManager>(); 
+            DebTxtxA.text = "AAAAA " ;
         }
 
         void OnEnable()
@@ -88,18 +89,49 @@ namespace UnityEngine.XR.ARFoundation.Samples
             m_TrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
         }
 
+        /* void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+         {
+             foreach (var trackedImage in eventArgs.added)
+             {
+                 // Give the initial image a reasonable default scale
+                 var minLocalScalar = Mathf.Min(trackedImage.size.x, trackedImage.size.y) / 2;
+                 trackedImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
+                 AssignPrefab(trackedImage);
+             }
+         }*/
+        public Text DebTxtxA, DebTxtxB, DebTxtxC;
         void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
         {
-            foreach (var trackedImage in eventArgs.added)
+            try
             {
-                // Give the initial image a reasonable default scale
-                var minLocalScalar = Mathf.Min(trackedImage.size.x, trackedImage.size.y) / 2;
-                trackedImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
-                AssignPrefab(trackedImage);
+                foreach (var trackedImage in eventArgs.updated)
+                {
+                    if (trackedImage.trackingState == TrackingState.Tracking)
+                    {
+                        Debug.Log("Tracking State is " + trackedImage.trackingState);
+                        Debug.Log("True");
+                        DebTxtxA.text = trackedImage.name + " True Tracking State is " + trackedImage.trackingState;
+                        DebTxtxB.text = trackedImage.name;
+                    }
+                    else if (trackedImage.trackingState == TrackingState.None)
+                    {
+                        Debug.Log("false");
+                        DebTxtxA.text = trackedImage.name + "  None Tracking State is " + trackedImage.trackingState;
+                    }
+                    else
+                    {
+                        Debug.Log("Tracking State is " + trackedImage.trackingState);
+                        Debug.Log("false");
+                        DebTxtxA.text = trackedImage.name + "  false Tracking State is " + trackedImage.trackingState;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.Log("Exception : " + e.Message);
             }
         }
-
-        void AssignPrefab(ARTrackedImage trackedImage)
+            void AssignPrefab(ARTrackedImage trackedImage)
         {
             if (m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab))
                 m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
