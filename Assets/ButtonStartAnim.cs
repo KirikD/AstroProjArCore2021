@@ -19,6 +19,7 @@ public class ButtonStartAnim : MonoBehaviour
     public bool IsActive = false;  bool isWaitAnim = true;
     public void AnimPlay()
     {
+        allMarkers = GameObject.FindGameObjectsWithTag("MarkerTarg");
         IsActive = !IsActive;               //if inventory is already True it will set it to false And the other way around.
                                             //all with the same key press that can be changed in the inspector. AnimationByButton
 

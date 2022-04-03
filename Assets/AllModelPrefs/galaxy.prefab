@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 641586051819045885}
   - component: {fileID: 641586051819045873}
   - component: {fileID: 641586051819045877}
+  - component: {fileID: 1787504857851080646}
   m_Layer: 0
   m_Name: galaxy
   m_TagString: Untagged
@@ -125,7 +126,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 298986679272159779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a709b887df70e143851eaaca988c867, type: 3}
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: -25
@@ -144,6 +145,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &1787504857851080646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298986679272159779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/Galaxy/MilkyWayGalaxy
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 1}
+  ShadNames: []
+  texture: {fileID: 0}
 --- !u!1001 &641586051783322772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -151,70 +171,111 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1111797984634822809}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.017
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: 1.3552527e-20
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+    - target: {fileID: 919132149155446097, guid: 3257614f789e68547bd293ccd3a9eb01,
+        type: 3}
       propertyPath: m_Name
       value: galaxyAddGalo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+--- !u!1 &298986677239468485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3257614f789e68547bd293ccd3a9eb01,
+    type: 3}
+  m_PrefabInstance: {fileID: 641586051783322772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4213106579856318002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298986677239468485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/Galaxy/Galaxy_65_emissive
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 1}
+  ShadNames: []
+  texture: {fileID: 0}
 --- !u!4 &1111797983489198975 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01, type: 3}
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3257614f789e68547bd293ccd3a9eb01,
+    type: 3}
   m_PrefabInstance: {fileID: 641586051783322772}
   m_PrefabAsset: {fileID: 0}

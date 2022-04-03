@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 108386889364265494}
   - component: {fileID: 108386889364265489}
   m_Layer: 0
-  m_Name: _Earth1
+  m_Name: _ Earth1
   m_TagString: MarkerTarg
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -584,7 +584,7 @@ MonoBehaviour:
   BundleFileName: CosmosFullBundle
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: Earth
-  AssetDatBaseVersion: A
+  AssetDatBaseVersion: E
 --- !u!1 &108386889472866372
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ Shader "Legacy Shaders/Particles/Additive (Soft)" {
 Properties {
     _MainTex ("Particle Texture", 2D) = "white" {}
     _InvFade ("Soft Particles Factor", Range(0.01,3.0)) = 0.97
+    _Color("Main Color", Color) = (1, 1, 1, 1)
 }
 
 Category {
@@ -65,7 +66,7 @@ Category {
 
             UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);
             float _InvFade;
-
+            fixed4 _Color;
             fixed4 frag (v2f i) : SV_Target
             {
                 #ifdef SOFTPARTICLES_ON
@@ -75,7 +76,7 @@ Category {
                 i.color.a *= fade;
                 #endif
 
-                half4 col = i.color * tex2D(_MainTex, i.texcoord);
+                half4 col = _Color*i.color * tex2D(_MainTex, i.texcoord);
                 col.rgb *= col.a;
                 UNITY_APPLY_FOG_COLOR(i.fogCoord, col, fixed4(0,0,0,0)); // fog towards black due to our blend mode
                 return col;
