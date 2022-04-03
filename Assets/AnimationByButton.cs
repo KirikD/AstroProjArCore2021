@@ -13,7 +13,10 @@ public class AnimationByButton : MonoBehaviour
        // anim["Open"].speed = 0.5f;
        // anim.Play("Open");
     }
-
+    private void OnEnable()
+    {
+        anim.Stop();
+    }
     // Update is called once per frame
     public void PlayStopAnimation(bool isPlay)
     {
