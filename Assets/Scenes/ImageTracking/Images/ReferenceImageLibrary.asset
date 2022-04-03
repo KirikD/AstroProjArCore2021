@@ -255,7 +255,7 @@ MonoBehaviour:
       m_GuidHigh: 5305590141884401147
     m_Size: {x: 0.1, y: 0.11173913}
     m_SpecifySize: 1
-    m_Name: W9_Tornado copy
+    m_Name: W9_Tornado
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5718201271454922076

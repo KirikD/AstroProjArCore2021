@@ -194,9 +194,9 @@ public class DistanceEventMaster : MonoBehaviour
     }
 
     public void GrozaInCiclonFunctionOn(Transform MainObj) // выполняем это на самом обекте на котором скрипт
-    { transform.GetChild(0).GetChild(AnimIndex).gameObject.SetActive(true); Debug.Log("<color=red>GrozaInCiclonFunctionOn: </color>" + MainObj.gameObject.name);  }// гроза  
+    { transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(true); Debug.Log("<color=red>GrozaInCiclonFunctionOn: </color>" + MainObj.gameObject.name);  }// гроза  
     public void GrozaInCiclonFunctionOff(Transform MainObj) // выполняем это на самом обекте на котором скрипт
-    { transform.GetChild(0).GetChild(AnimIndex).gameObject.SetActive(false); }// гроза  
+    { transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(false); }// гроза  
     // возвращаем планету на место при разрыве маркеров их связи по расстоянию
     public void ReturnPlanetParent(Transform pos) // убираем парент
     {  //  трали вали куча кода

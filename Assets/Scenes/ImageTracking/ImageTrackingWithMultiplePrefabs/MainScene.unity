@@ -648,54 +648,55 @@ MonoBehaviour:
     imagePrefab: {fileID: 8465436664739136311, guid: c63abc78347fab84ca0f5a04e8840cad,
       type: 3}
   - imageGuid: b53b3770-c2e7-4b23-aa20-53ba45c5109d
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 8798366392434632882, guid: e68ba7756ce4ed3459515e2779215e2b,
       type: 3}
   - imageGuid: aee40546-7e33-465c-82c5-b5c368708409
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 9106017290854777221, guid: 63dc70cac62f2b34da03d368f9e3d33f,
       type: 3}
   - imageGuid: d07aa634-db07-4a8d-a7c7-5528bd79a9f5
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 4988291603758987999, guid: 31f68e888b7bb1047b0fb1f519a5669f,
       type: 3}
   - imageGuid: 241ac029-166e-4d83-a342-35797e970fa5
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 8361948942612923183, guid: 40c752b281238c5428182c8abe84f95e,
       type: 3}
   - imageGuid: 3d37ad99-5b94-4860-bdaf-7bd94d3f0215
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 2525424536864120322, guid: 9f963ab45e788d544b99d72aa56d2fab,
       type: 3}
   - imageGuid: f474604c-5533-4ead-bc84-dc430a9502af
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 2692713779814575438, guid: a058e9a8140a0534ca8337336d5e8329,
       type: 3}
   - imageGuid: dcf1541a-8622-4b9a-956b-3b716d44ddca
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 5644433021407628377, guid: f9584d710b46c3d41b74799b0a18c8ae,
       type: 3}
   - imageGuid: e9a04c89-b0b2-4d38-ba03-e97bf155eed4
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 4091705877521615151, guid: e33402ac7936e9146a3a112b368ac93a,
       type: 3}
   - imageGuid: cad7ceed-eadc-419c-a9d0-8f9fc9390922
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 2942609237186760557, guid: 2d2e52cc5ddaeb243a528505cb15a3a8,
       type: 3}
   - imageGuid: 9341f55c-21c2-4f5b-9648-035e85f536a4
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 6110458404417040459, guid: d478d8a83a6d12543ad2291837c0927f,
       type: 3}
   - imageGuid: 6b476d2d-f3dc-470e-a25c-f67b1ca0847e
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 6033653773504039168, guid: 1fc92007c587f884f975bf86ba926fbf,
       type: 3}
   - imageGuid: 99aa955a-a375-4aa9-bc51-9edbd3658532
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 1268972342643459113, guid: 1ae5398d9717c054fab86cdd0f28c8d9,
       type: 3}
   - imageGuid: c8cd2d68-e871-4777-92ce-67e7c13d990b
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 3149763904820116891, guid: 2e74156b19423e24ab2f6d34baf8b4c8,
       type: 3}
   - imageGuid: 7482e623-9f47-429a-bb45-102582d32ee0
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 6337828553344506480, guid: f45256514ca500548a52f1e3f36b4d0d,
       type: 3}
   - imageGuid: db0e377b-b1ec-45b1-bebc-752a0f2f0bde
-    imagePrefab: {fileID: 8367145187887469793, guid: 3760319adcbe74905bf3e2a7dced4830,
+    imagePrefab: {fileID: 8841023133461665492, guid: de9627fb758d7e648b894ab5861e17af,
       type: 3}
   m_ImageLibrary: {fileID: 11400000, guid: c86e375d7e7430442a1104e88fa21f21, type: 2}
   DebTxtxA: {fileID: 1911733766}
   DebTxtxB: {fileID: 220018199}
   DebTxtxC: {fileID: 1936858749}
+  gamOutModel: {fileID: 0}
 --- !u!114 &143437354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11051,7 +11052,7 @@ MonoBehaviour:
   BundleFileName: CosmosFullBundle
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: asteroids
-  AssetDatBaseVersion: E
+  AssetDatBaseVersion: I
   isReservPref: 1
   ObjectsNames:
   - asteroids
@@ -11069,6 +11070,21 @@ MonoBehaviour:
   - Uranus
   - Venus_1K
   - wormhole3_export
+  - Groza1
+  - Cyclone2
+  - Cloud3
+  - Tsunami4
+  - Volcano5
+  - SoftSnowShuriken6
+  - Snezinka7
+  - Ice8
+  - Tornado9
+  - Listopad10
+  - Stars11
+  - SevernoeSianie12
+  - Raduga13
+  - Sun14
+  - Rain15
   ObjectsGam: []
   LoaderUI: {fileID: 7103575910563656082}
 --- !u!114 &8510676758815052071

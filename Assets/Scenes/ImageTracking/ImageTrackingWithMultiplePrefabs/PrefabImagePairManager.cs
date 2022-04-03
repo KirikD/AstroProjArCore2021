@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.XR.ARFoundation;
-
+using System.Collections;
 namespace UnityEngine.XR.ARFoundation.Samples
 {
     /// <summary>
@@ -108,24 +108,27 @@ namespace UnityEngine.XR.ARFoundation.Samples
                         Debug.Log("Tracking State is " + trackedImage.trackingState);
                         Debug.Log("True");
                         DebTxtxA.text = trackedImage.name + " || " + trackedImage.tag + " || " + trackedImage.transform.GetChild(0).gameObject.name + " True Tracking State is " + trackedImage.trackingState;
-                        // trackedImage.transform.GetChild(0).gameObject.SetActive(true);
 
-                         trackedImage.transform.GetChild(0).localPosition = new Vector3(0, 0, 0);
+                       
+                        trackedImage.transform.GetChild(0).localPosition = new Vector3(0, 0, 0);
+                        StopAllCoroutines(); ///
                     }
                     else if (trackedImage.trackingState == TrackingState.None)
                     {
                         Debug.Log("false");
                         DebTxtxA.text = trackedImage.name + " || " + trackedImage.tag + " || " + trackedImage.transform.GetChild(0).gameObject.name + "  None Tracking State is " + trackedImage.trackingState;
-                        //  trackedImage.transform.GetChild(0).gameObject.SetActive(false);
-                        trackedImage.transform.GetChild(0).localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
+                       
+                       // trackedImage.transform.GetChild(0).localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
                     }
                     else
                     {
                         Debug.Log("Tracking State is " + trackedImage.trackingState);
                         Debug.Log("false");
                         DebTxtxA.text = trackedImage.name + " || " + trackedImage.tag + " || " + trackedImage.transform.GetChild(0).gameObject.name + "  false Tracking State is " + trackedImage.trackingState;
-                        //  trackedImage.transform.GetChild(0).gameObject.SetActive(false);
-                        trackedImage.transform.GetChild(0).localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
+                       
+                        //trackedImage.transform.GetChild(0).localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
+                        gamOutModel = trackedImage.transform.GetChild(0);   ///
+                        StartCoroutine(WaitOutModel(gamOutModel));///
                     }
                 }
             }
@@ -135,38 +138,17 @@ namespace UnityEngine.XR.ARFoundation.Samples
             }
         }
         public Text DebTxtxA, DebTxtxB, DebTxtxC;
-       /* void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+        public Transform gamOutModel;
+        //  void OutModel()   {  gamOutModel.localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));     }
+        public IEnumerator WaitOutModel(Transform objToHidge)
         {
-            try
+            while (true)
             {
-                foreach (var trackedImage in eventArgs.updated)
-                {
-                    if (trackedImage.trackingState == TrackingState.Tracking)
-                    {
-                        Debug.Log("Tracking State is " + trackedImage.trackingState);
-                        Debug.Log("True");
-                        DebTxtxA.text = trackedImage.name + " True Tracking State is " + trackedImage.trackingState;
-                        DebTxtxB.text = trackedImage.name;
-                    }
-                    else if (trackedImage.trackingState == TrackingState.None)
-                    {
-                        Debug.Log("false");
-                        DebTxtxA.text = trackedImage.name + "  None Tracking State is " + trackedImage.trackingState;
-                    }
-                    else
-                    {
-                        Debug.Log("Tracking State is " + trackedImage.trackingState);
-                        Debug.Log("false");
-                        DebTxtxA.text = trackedImage.name + "  false Tracking State is " + trackedImage.trackingState;
-                    }
-                }
+                yield return new WaitForSeconds(1);
+                objToHidge.localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
             }
-            catch (Exception e)
-            {
-                Debug.Log("Exception : " + e.Message);
-            }
-        }*/
-            void AssignPrefab(ARTrackedImage trackedImage)
+        }
+        void AssignPrefab(ARTrackedImage trackedImage)
         {
             if (m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab))
                 m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);

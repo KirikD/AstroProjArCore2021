@@ -198,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 9106017290854777221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9106017289023090047}
@@ -280,7 +280,7 @@ MonoBehaviour:
   - {fileID: 0}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 2
+  DistanceAction: 0.2
   AllVariantsActionsBase:
   - name: _ Groza1
     ParentObjFunc: GrozaInCiclonFunctionOn
