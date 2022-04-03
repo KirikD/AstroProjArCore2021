@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2604829586114441766}
   - component: {fileID: 8147262762412828714}
   - component: {fileID: 2001305133076409908}
+  - component: {fileID: 8087346370119129573}
   m_Layer: 0
   m_Name: Saturn Rings_Material #63_0
   m_TagString: Untagged
@@ -83,6 +84,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8087346370119129573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417818600703950468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Transparent/Cutout/Soft Edge Unlit
+  TexName: _MainTex
+  TexPath: Textures/Saturn_63_baseColor_256
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 1}
+  ShadNames:
+  - _Cutoff@0,9
+  texture: {fileID: 0}
 --- !u!1 &3946747368244533375
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +115,7 @@ GameObject:
   - component: {fileID: 3946747368244533374}
   - component: {fileID: 3946747368244533368}
   - component: {fileID: 3946747368244533369}
+  - component: {fileID: 3137858279643001487}
   m_Layer: 0
   m_Name: Saturn Rings_Material #63_0 (1)
   m_TagString: Untagged
@@ -166,6 +188,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3137858279643001487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3946747368244533375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Transparent/Cutout/Soft Edge Unlit
+  TexName: _MainTex
+  TexPath: Textures/Saturn_63_baseColor_128
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 1}
+  ShadNames:
+  - _Cutoff@0,9
+  texture: {fileID: 0}
 --- !u!1 &4180677476012859581
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,8 +220,8 @@ GameObject:
   - component: {fileID: 2890850742060134089}
   - component: {fileID: 3946747368979045863}
   - component: {fileID: 3946747368979045865}
-  - component: {fileID: 3946747368979045867}
   - component: {fileID: 3946747368979045861}
+  - component: {fileID: 2698779891379542982}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -246,21 +288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
---- !u!114 &3946747368979045867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4180677476012859581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a709b887df70e143851eaaca988c867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedX: 22
-  speedY: 0
-  speedZ: 0
 --- !u!114 &3946747368979045861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +301,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &2698779891379542982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180677476012859581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 11
+  speedY: 0
+  speedZ: 0
 --- !u!1 &7369459379471716216
 GameObject:
   m_ObjectHideFlags: 0

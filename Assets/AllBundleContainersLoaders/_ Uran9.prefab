@@ -189,8 +189,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6036855512654851757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.260998, y: 0, z: -30.660004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6036855512945464802}
@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndicatorMeshTest: {fileID: 6036855512592262036}
+  DebugTXT: []
   AnimPoint:
   - {fileID: 6036855513945945270}
   - {fileID: 6036855513945945270}
@@ -275,7 +276,7 @@ MonoBehaviour:
   - {fileID: 6036855513108781415}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 2
+  DistanceAction: 0.2
   AllVariantsActionsBase:
   - name: _ Earth1
     ParentObjFunc: SetParentObject
@@ -372,6 +373,7 @@ GameObject:
   - component: {fileID: 6036855512945464802}
   - component: {fileID: 6036855512945464803}
   - component: {fileID: 6036855512945464800}
+  - component: {fileID: 8149641255418527072}
   m_Layer: 0
   m_Name: UranusContainer
   m_TagString: Untagged
@@ -417,7 +419,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6036855512945464813}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0889d7b12e0e542bde4265b552f09a, type: 3}
   m_Name: 
@@ -428,6 +430,25 @@ MonoBehaviour:
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: Uranus
   AssetDatBaseVersion: A
+  isReservPref: 0
+  ObjectsNames: []
+  ObjectsGam: []
+  LoaderUI: {fileID: 0}
+--- !u!114 &8149641255418527072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036855512945464813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBandleLoader: {fileID: 0}
+  ObjectsGameobj: {fileID: 0}
+  name: Uranus
 --- !u!1 &6036855513015901422
 GameObject:
   m_ObjectHideFlags: 0

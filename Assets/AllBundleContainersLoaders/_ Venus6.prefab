@@ -268,8 +268,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4786008599097122376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.060997, y: 0, z: -40.790005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4786008599622267589}
@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndicatorMeshTest: {fileID: 4786008598604081538}
+  DebugTXT: []
   AnimPoint:
   - {fileID: 4786008598536809780}
   - {fileID: 4786008598536809780}
@@ -354,7 +355,7 @@ MonoBehaviour:
   - {fileID: 4786008599439151713}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 2
+  DistanceAction: 0.2
   AllVariantsActionsBase:
   - name: _ Earth1
     ParentObjFunc: SetParentObject
@@ -700,6 +701,7 @@ GameObject:
   - component: {fileID: 4786008599622267589}
   - component: {fileID: 4786008599622267594}
   - component: {fileID: 4786008599622267595}
+  - component: {fileID: 3411887520729546011}
   m_Layer: 0
   m_Name: VenusContainer
   m_TagString: Untagged
@@ -745,7 +747,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4786008599622267588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0889d7b12e0e542bde4265b552f09a, type: 3}
   m_Name: 
@@ -756,3 +758,22 @@ MonoBehaviour:
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: Venus_1K
   AssetDatBaseVersion: A
+  isReservPref: 0
+  ObjectsNames: []
+  ObjectsGam: []
+  LoaderUI: {fileID: 0}
+--- !u!114 &3411887520729546011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786008599622267588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBandleLoader: {fileID: 0}
+  ObjectsGameobj: {fileID: 0}
+  name: Venus_1K

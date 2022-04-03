@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 8316119715532039169}
   - component: {fileID: 3791208952288810881}
   - component: {fileID: 3305432989011054457}
-  - component: {fileID: 7216769814551739464}
+  - component: {fileID: 5021795180237061431}
   m_Layer: 0
   m_Name: aoutsideb
   m_TagString: Untagged
@@ -347,7 +347,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7216769814551739464
+--- !u!114 &5021795180237061431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,11 +359,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShaderName: Legacy Shaders/Transparent/Cutout/Soft Edge Unlit
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
   TexPath: Textures/CoreParts
   ColorN: _Color
-  ColorV: {r: 1, g: 0.6964581, b: 0.2028302, a: 1}
+  ColorV: {r: 1, g: 0.7651798, b: 0.28773582, a: 0.5882353}
   ShadNames: []
   texture: {fileID: 0}
 --- !u!1 &4634308096692924002
@@ -771,7 +771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 19
+  speedX: 14
   speedY: 0
   speedZ: 0
 --- !u!114 &5422093549061784414
@@ -1309,7 +1309,7 @@ GameObject:
   - component: {fileID: 5373103023676415513}
   - component: {fileID: 4583862774429605398}
   - component: {fileID: 2605235639525702599}
-  - component: {fileID: 3638722571210595709}
+  - component: {fileID: 6267289434330814261}
   m_Layer: 0
   m_Name: aoutsidebBB
   m_TagString: Untagged
@@ -1382,7 +1382,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3638722571210595709
+--- !u!114 &6267289434330814261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1394,10 +1394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShaderName: Legacy Shaders/Transparent/Cutout/Soft Edge Unlit
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
   TexPath: Textures/CoreParts
   ColorN: _Color
-  ColorV: {r: 1, g: 0.6964581, b: 0.2028302, a: 1}
+  ColorV: {r: 1, g: 0.7651798, b: 0.28773582, a: 0.5882353}
   ShadNames: []
   texture: {fileID: 0}

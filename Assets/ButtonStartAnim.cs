@@ -36,7 +36,7 @@ public class ButtonStartAnim : MonoBehaviour
 
                     try
                     {
-                        allMarkers[i].transform.GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(true);
+                        allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(true);
                     }
                     catch { }
                 }
@@ -53,7 +53,7 @@ public class ButtonStartAnim : MonoBehaviour
                 {
                     try
                     {
-                        allMarkers[i].transform.GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(false);
+                        allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(false);
                     }
                     catch { }
                 }

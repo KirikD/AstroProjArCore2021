@@ -14,15 +14,46 @@ public class NewBandleLoader : MonoBehaviour
     public string BundleLocalLoadPath = "Не нужно заполнять! поле забивается само!";
     public string PrefabGameobjectName = "asteroids";
     // вестия базы данных ассета любой стринг
-    public string AssetDatBaseVersion = "A";
+    public string AssetDatBaseVersion = "T";
+    public bool isReservPref = false;
     void Start()
     {
+     //   AssetDatBaseVersion = "T";
         // загрузили наш ассет из базы данных
-        Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 1.0f));
+      //  Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 10.0f));
 
-        // Если ассет скачан то пытаемся инстансировать его сразу
-        SetInstance();
+        if (isReservPref == false)
+        {
+            AssetDatBaseVersion = "T";
+            // загрузили наш ассет из базы данных
+            Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 10.0f));
+
+            // Если ассет скачан то пытаемся инстансировать его сразу
+            SetInstance();
+        }
+        if (isReservPref)
+        {
+            AssetDatBaseVersion = "T";
+            Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.9f, 2.0f));// загрузили наш ассет из базы данных
+            var myLoadedAssetBundle = AssetBundle.LoadFromFile(Application.persistentDataPath + "/" + BundleFileFolderName + "/" + BundleFileName + AssetDatBaseVersion + ".unity3d");
+            if (myLoadedAssetBundle == null)
+            {
+                Debug.Log("Failed to load AssetBundle!");
+                return;
+            }
+            ObjectsGam = new GameObject[ObjectsNames.Length];
+            for (int i = 0; i < ObjectsNames.Length; i++)
+            { 
+                 var prefab = myLoadedAssetBundle.LoadAsset<GameObject>(ObjectsNames[i]);
+                ObjectsGam[i] = Instantiate(prefab);
+                ObjectsGam[i].transform.SetParent(this.gameObject.transform, false);
+                ObjectsGam[i].SetActive(false);
+                ObjectsGam[i].name = ObjectsNames[i];
+            }
+            myLoadedAssetBundle.Unload(false);
+        }
     }
+    public string[] ObjectsNames; public GameObject[] ObjectsGam;
     void LoadAssetBundleFromURL()
     {
         // скачиваем префаб
@@ -33,9 +64,10 @@ public class NewBandleLoader : MonoBehaviour
             StartCoroutine(downloadAsset(UrlBundleDawnload));
         }
     }
-
+    public GameObject LoaderUI;
     IEnumerator downloadAsset(string URLpath)
     {
+        LoaderUI.SetActive(true);
         string url = URLpath;
 
         UnityWebRequest www = UnityWebRequest.Get(url);
@@ -78,6 +110,7 @@ public class NewBandleLoader : MonoBehaviour
             File.WriteAllBytes(path, data);
             Debug.Log("Saved Data to: " + path.Replace("/", "\\"));
             Invoke(nameof(SetInstance), 2); // инстансируем данные
+            LoaderUI.SetActive(false);
         }
         catch (Exception e)
         {
@@ -93,7 +126,7 @@ public class NewBandleLoader : MonoBehaviour
         BundleLocalLoadPath = Application.persistentDataPath + "/" + BundleFileFolderName + "/" + BundleFileName + AssetDatBaseVersion + ".unity3d";
         StartCoroutine(LoadObject(BundleLocalLoadPath));
     }
-
+    GameObject InstancedBandle;
     IEnumerator LoadObject(string path)
     {
         AssetBundleCreateRequest bundle = AssetBundle.LoadFromFileAsync(path);
@@ -113,10 +146,12 @@ public class NewBandleLoader : MonoBehaviour
         
         //obj.transform.Rotate(350.41f, 400f, 20f);  obj.transform.localScale = new Vector3(1.0518f, 0.998f, 1.1793f);
 
-        GameObject InstancedBandle = Instantiate(obj);
+        InstancedBandle = Instantiate(obj);
         //InstancedBandle.transform.localPosition = new Vector3(0.0f, InstancedBandle.transform.localPosition.y, 0.0f);
         InstancedBandle.transform.SetParent(this.gameObject.transform,false);
 
         myLoadedAssetBundle.Unload(false);
+        if (isReservPref)
+            InstancedBandle.SetActive(false);
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8465436664387354022}
   - component: {fileID: 8465436664387354025}
   - component: {fileID: 8465436664387354024}
+  - component: {fileID: 5212053109683903051}
   m_Layer: 0
   m_Name: SuperNovaContainer
   m_TagString: Untagged
@@ -56,7 +57,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8465436664387354023}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0889d7b12e0e542bde4265b552f09a, type: 3}
   m_Name: 
@@ -67,6 +68,25 @@ MonoBehaviour:
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: Black hole p1_Complete2
   AssetDatBaseVersion: B
+  isReservPref: 0
+  ObjectsNames: []
+  ObjectsGam: []
+  LoaderUI: {fileID: 0}
+--- !u!114 &5212053109683903051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8465436664387354023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBandleLoader: {fileID: 0}
+  ObjectsGameobj: {fileID: 0}
+  name: Black hole p1_Complete2
 --- !u!1 &8465436664611194802
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,8 +196,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8465436664739136311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.39900208, y: 0, z: -34.370003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8465436664387354022}

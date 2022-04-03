@@ -189,8 +189,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5506948155895802283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.140999, y: 0, z: -29.130003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5506948156370431513}
@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndicatorMeshTest: {fileID: 5506948155472323105}
+  DebugTXT: []
   AnimPoint:
   - {fileID: 5506948155084180263}
   - {fileID: 5506948155084180263}
@@ -275,7 +276,7 @@ MonoBehaviour:
   - {fileID: 5506948157054759076}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 2
+  DistanceAction: 0.2
   AllVariantsActionsBase:
   - name: _ Earth1__
     ParentObjFunc: SetParentObject
@@ -403,6 +404,7 @@ GameObject:
   - component: {fileID: 5506948156370431513}
   - component: {fileID: 5506948156370431510}
   - component: {fileID: 5506948156370431511}
+  - component: {fileID: 8062670296161385306}
   m_Layer: 0
   m_Name: MoonContainer
   m_TagString: Untagged
@@ -459,6 +461,25 @@ MonoBehaviour:
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: moon_export2
   AssetDatBaseVersion: A
+  isReservPref: 0
+  ObjectsNames: []
+  ObjectsGam: []
+  LoaderUI: {fileID: 0}
+--- !u!114 &8062670296161385306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5506948156370431512}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBandleLoader: {fileID: 0}
+  ObjectsGameobj: {fileID: 0}
+  name: moon_export2
 --- !u!1 &5506948156496989633
 GameObject:
   m_ObjectHideFlags: 0

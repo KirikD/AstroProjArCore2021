@@ -405,8 +405,8 @@ GameObject:
   - component: {fileID: 7422904007602165971}
   - component: {fileID: 7933392837474711410}
   - component: {fileID: 8125310098186814554}
-  - component: {fileID: 8125310098186814558}
   - component: {fileID: 8125310098186814498}
+  - component: {fileID: 8623615230363757924}
   m_Layer: 0
   m_Name: Black hole p1_Complete2
   m_TagString: Untagged
@@ -515,21 +515,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
---- !u!114 &8125310098186814558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8936144062723717382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a709b887df70e143851eaaca988c867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedX: 0
-  speedY: 25
-  speedZ: 0
 --- !u!114 &8125310098186814498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,3 +528,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &8623615230363757924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936144062723717382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 51
+  speedZ: 0

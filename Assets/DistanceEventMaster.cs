@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
-//using UnityEngine.UI;
+using UnityEngine.UI;
 public class DistanceEventMaster : MonoBehaviour
 {
     public MeshRenderer IndicatorMeshTest;
-    //public Text[] DebugTXT; public Text DebugUniqueTXT;
+    public Text[] DebugTXT;// public Text DebugUniqueTXT;
     // Start is called before the first frame update
     [Header("точка обжект анимации к которой парентим дочерний обжект")]
     public Transform[] AnimPoint; public int AnimIndex;
@@ -25,10 +25,12 @@ public class DistanceEventMaster : MonoBehaviour
             lightuser.GetComponent<DistanceEventMaster>().MarkerListUpdated();
         }
 
-       // IndicatorMeshTest.enabled = false;
-      
+        GameObject[] gg = GameObject.FindGameObjectsWithTag("DebText");
+        DebugTXT = new Text[gg.Length];
+        for (int i = 0; i < gg.Length; i++)      DebugTXT[i] = gg[i].GetComponent<Text>();
+        rand = (int)UnityEngine.Random.Range(0, 19);
     }
-
+    int rand;
     public void MarkerListUpdated() // вызываем когда доп маркер появился в мире
     {
       //  thisMainObj = this.transform.GetChild(0).transform.gameObject;
@@ -58,7 +60,7 @@ public class DistanceEventMaster : MonoBehaviour
             if (dist < DistanceAction && allMarkers[AdderCucle].name != transform.gameObject.name )
             {
 
-
+             
                 if (oldName.Length < 3)
                 {            // единыжды вызываем
                     if (oldName != allMarkers[AdderCucle].name) //&& allMarkers[AdderCucle].GetComponent<DistanceEventMaster>().IndicatorMeshTest.enabled
@@ -68,7 +70,7 @@ public class DistanceEventMaster : MonoBehaviour
 
                         Debug.Log("<color=green>CollisionWidth: </color>" + allMarkers[AdderCucle].name);
                         AllVariantsActionsBaseNameSort(allMarkers[AdderCucle].gameObject.name); // допустим взаимодействуем с астеройдом пишем сюда имя астеройда
-                        //DebugTXT[0].text = "" + allMarkers[AdderCucle].name;
+                        //DebugTXT[(int)UnityEngine.Random.Range(0,20)].text = "" + allMarkers[AdderCucle].name + " || " + transform.position;
                         //DebugUniqueTXT.text = this.gameObject.name + " || " + allMarkers[AdderCucle].name + " || " + transform.position;
                         oldObjGeom = allMarkers[AdderCucle].transform.GetChild(0).gameObject;
                     }
@@ -88,8 +90,10 @@ public class DistanceEventMaster : MonoBehaviour
                                                                                 //if (oldObjGeom != null)
                 }
             }
+
         }
-     }
+        DebugTXT[rand].text = "   " + oldName + " || " + this.gameObject.name + " || " + transform.parent.localPosition.x + " || " + transform.parent.localPosition.y + " || " + transform.parent.localPosition.z + " || ";
+    }
     public void SetMadkerDistDal() 
     {    
         transform.position = new Vector3(UnityEngine.Random.Range(-999,999) , UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999)); Invoke("InvMadkerDistDal", 0.29f); Invoke("InvMadkerDistDal", 0.5f);
@@ -104,7 +108,7 @@ public class DistanceEventMaster : MonoBehaviour
         {
             if (AllVariantsActionsBase[i].name == nam)
             {
-               // DebugTXT[1].text = "AllVar " + nam; DebugTXT[2].text = "AllVar " + AllVariantsActionsBase[i].name;
+               // DebugTXT[1].text = "AllVar " + nam; DebugTXT[2].text = "AllVar " + AllVariantsActionsBase[i].name + " || " + transform.position;
                 AnimIndex = AllVariantsActionsBase[i].AnimIndexID;
                 this.Invoke(AllVariantsActionsBase[i].ParentObjFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayA); // парент функ
                 this.Invoke(AllVariantsActionsBase[i].AnimPlayFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayB); // Аним функ
@@ -119,7 +123,7 @@ public class DistanceEventMaster : MonoBehaviour
         {
             if (AllVariantsActionsBase[i].name == nam)
             {
-               // DebugTXT[1].text = "AllVar " + nam; DebugTXT[2].text = "AllVar " + AllVariantsActionsBase[i].name;          
+              //  DebugTXT[1].text = "AllVar " + nam; DebugTXT[2].text = "AllVar " + AllVariantsActionsBase[i].name + " || " + transform.position;          
                 this.Invoke(AllVariantsActionsBase[i].FuncOtdalF_A, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayE); // парент функ
                 this.Invoke(AllVariantsActionsBase[i].FuncOtdalF_B, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayF); // Аним функ
 
@@ -163,7 +167,7 @@ public class DistanceEventMaster : MonoBehaviour
     public void SetParentObject(Transform MainObj) // парентим к
     {
         Debug.Log("<color=red>SetParentObject: </color>" + MainObj.gameObject.name);
-       // DebugTXT[3].text = "Parent  " + MainObj.gameObject.name;
+      //  DebugTXT[3].text = "Parent  " + MainObj.gameObject.name;
       MainObj.GetChild(0).SetParent(this.transform.GetChild(AnimIndex), true); // мы берем в маркере обжект который всегда в иерархии 0  и парентим его к анимированному поинту который всегда номер 1 имеет
 
     }
@@ -174,7 +178,7 @@ public class DistanceEventMaster : MonoBehaviour
     }
     public void PlayAnimator(Transform MainObj) // парентим к
     {
-       // DebugTXT[4].text = "PlayAnim  " + MainObj.gameObject.name;
+      //  DebugTXT[4].text = "PlayAnim  " + MainObj.gameObject.name;
         Debug.Log("<color=black>PlayAnimator: </color>" + MainObj.gameObject.name);
 
         transform.GetChild(AnimIndex).GetComponent<Animator>().Rebind();

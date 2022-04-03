@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 6987746827881315206}
   - component: {fileID: 6987746827881315207}
   - component: {fileID: 6987746827881315224}
+  - component: {fileID: 3062232222273459985}
   m_Layer: 0
   m_Name: jupiterContainer
   m_TagString: Untagged
@@ -214,7 +215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6987746827881315205}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0889d7b12e0e542bde4265b552f09a, type: 3}
   m_Name: 
@@ -225,6 +226,25 @@ MonoBehaviour:
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: jupiter
   AssetDatBaseVersion: A
+  isReservPref: 0
+  ObjectsNames: []
+  ObjectsGam: []
+  LoaderUI: {fileID: 0}
+--- !u!114 &3062232222273459985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987746827881315205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBandleLoader: {fileID: 0}
+  ObjectsGameobj: {fileID: 0}
+  name: jupiter
 --- !u!1 &6987746828164322909
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,8 +434,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6987746828845051914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.200996, y: 0, z: -37.550003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6987746827881315206}
@@ -491,6 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndicatorMeshTest: {fileID: 6987746828164322911}
+  DebugTXT: []
   AnimPoint:
   - {fileID: 6987746827652608221}
   - {fileID: 6987746827652608221}
@@ -500,7 +521,7 @@ MonoBehaviour:
   - {fileID: 6987746829083676629}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 2
+  DistanceAction: 0.2
   AllVariantsActionsBase:
   - name: _ Earth1
     ParentObjFunc: SetParentObject

@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4370082486456665564}
   - component: {fileID: 1581299707192309873}
   - component: {fileID: 8513913312216212647}
+  - component: {fileID: 4597804086079210119}
   m_Layer: 0
   m_Name: CenterGalo
   m_TagString: Untagged
@@ -166,6 +167,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4597804086079210119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843449775468133067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/CoreParts
+  ColorN: _Color
+  ColorV: {r: 1, g: 0.7651798, b: 0.28773582, a: 0.5882353}
+  ShadNames: []
+  texture: {fileID: 0}
 --- !u!1 &1111057479919119947
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,8 +450,8 @@ GameObject:
   - component: {fileID: 5751806255553375818}
   - component: {fileID: 5839323650796281168}
   - component: {fileID: 5839323650796281194}
-  - component: {fileID: 5839323650796281192}
   - component: {fileID: 5839323650796281172}
+  - component: {fileID: 4480080560109622613}
   m_Layer: 0
   m_Name: Marc_export
   m_TagString: Untagged
@@ -520,7 +540,8 @@ Animation:
   m_GameObject: {fileID: 6757677895339139134}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -623603649343465320, guid: 8eddae3db08ba3c4584b44d69611339c, type: 3}
+  m_Animation: {fileID: -623603649343465320, guid: 8eddae3db08ba3c4584b44d69611339c,
+    type: 3}
   m_Animations:
   - {fileID: -623603649343465320, guid: 8eddae3db08ba3c4584b44d69611339c, type: 3}
   - {fileID: 4993951529159155048, guid: 8eddae3db08ba3c4584b44d69611339c, type: 3}
@@ -554,21 +575,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
---- !u!114 &5839323650796281192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6757677895339139134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a709b887df70e143851eaaca988c867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedX: 22
-  speedY: 0
-  speedZ: 0
 --- !u!114 &5839323650796281172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +588,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &4480080560109622613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757677895339139134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 11
+  speedY: 0
+  speedZ: 0
 --- !u!1 &7064558073662276831
 GameObject:
   m_ObjectHideFlags: 0

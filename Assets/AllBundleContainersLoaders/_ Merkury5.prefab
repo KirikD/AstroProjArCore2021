@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 4954436319418108210}
   - component: {fileID: 4954436319418108211}
   - component: {fileID: 4954436319418108208}
+  - component: {fileID: 5121996688295098079}
   m_Layer: 0
   m_Name: MercuryContainer
   m_TagString: Untagged
@@ -214,7 +215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4954436319418108213}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0889d7b12e0e542bde4265b552f09a, type: 3}
   m_Name: 
@@ -225,6 +226,25 @@ MonoBehaviour:
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: Mercury_1K
   AssetDatBaseVersion: A
+  isReservPref: 0
+  ObjectsNames: []
+  ObjectsGam: []
+  LoaderUI: {fileID: 0}
+--- !u!114 &5121996688295098079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954436319418108213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBandleLoader: {fileID: 0}
+  ObjectsGameobj: {fileID: 0}
+  name: Mercury_1K
 --- !u!1 &4954436319428574584
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,8 +513,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4954436320496166665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.460999, y: 0, z: -35.15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4954436319418108210}
@@ -570,6 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndicatorMeshTest: {fileID: 4954436320018094199}
+  DebugTXT: []
   AnimPoint:
   - {fileID: 0}
   - {fileID: 4954436319100476531}
@@ -579,7 +600,7 @@ MonoBehaviour:
   - {fileID: 4954436320339244060}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 2
+  DistanceAction: 0.2
   AllVariantsActionsBase:
   - name: _ Venus6
     ParentObjFunc: SetParentObject

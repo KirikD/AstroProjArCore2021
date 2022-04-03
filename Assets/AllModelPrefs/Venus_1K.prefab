@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 9172745196594658640}
   - component: {fileID: 8527075741375681265}
   - component: {fileID: 7533878454633161550}
-  - component: {fileID: 7533878454633161546}
   - component: {fileID: 6388589588128008291}
   - component: {fileID: 6388589588128008601}
+  - component: {fileID: 1596390480537567553}
   m_Layer: 0
   m_Name: Venus_1K
   m_TagString: Untagged
@@ -116,21 +116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
---- !u!114 &7533878454633161546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7227397071150406789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a709b887df70e143851eaaca988c867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedX: 0
-  speedY: -22
-  speedZ: 0
 --- !u!135 &6388589588128008291
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -157,3 +142,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &1596390480537567553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7227397071150406789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 11
+  speedZ: 0

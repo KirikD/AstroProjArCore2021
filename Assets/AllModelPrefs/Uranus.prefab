@@ -455,8 +455,8 @@ GameObject:
   - component: {fileID: 5594115436333130558}
   - component: {fileID: 6015048668325171244}
   - component: {fileID: 6015048668325171222}
-  - component: {fileID: 6015048668325171216}
   - component: {fileID: 6015048668325171218}
+  - component: {fileID: 1162977556057461722}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -522,21 +522,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
---- !u!114 &6015048668325171216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897499451585752394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a709b887df70e143851eaaca988c867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedX: 0
-  speedY: 0
-  speedZ: 22
 --- !u!114 &6015048668325171218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,6 +535,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &1162977556057461722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6897499451585752394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 0
+  speedZ: 14
 --- !u!1 &7744660523350797910
 GameObject:
   m_ObjectHideFlags: 0

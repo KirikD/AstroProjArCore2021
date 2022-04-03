@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7698845911689372480}
   - component: {fileID: 7698845911689372483}
   - component: {fileID: 7698845911689372482}
+  - component: {fileID: 2729511956555155283}
   m_Layer: 0
   m_Name: SunContainer
   m_TagString: Untagged
@@ -56,7 +57,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7698845911689372481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0889d7b12e0e542bde4265b552f09a, type: 3}
   m_Name: 
@@ -67,6 +68,25 @@ MonoBehaviour:
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: Sun
   AssetDatBaseVersion: E
+  isReservPref: 0
+  ObjectsNames: []
+  ObjectsGam: []
+  LoaderUI: {fileID: 0}
+--- !u!114 &2729511956555155283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698845911689372481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBandleLoader: {fileID: 0}
+  ObjectsGameobj: {fileID: 0}
+  name: Sun
 --- !u!1 &7698845911934831581
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,8 +509,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7698845912400957233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.860998, y: 0, z: -40.000004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7698845911689372480}
@@ -572,6 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndicatorMeshTest: {fileID: 7698845912942413758}
+  DebugTXT: []
   AnimPoint:
   - {fileID: 7698845913558894607}
   - {fileID: 7698845912078331993}
@@ -586,7 +607,7 @@ MonoBehaviour:
   - {fileID: 7698845912114058771}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 3
+  DistanceAction: 0.25
   AllVariantsActionsBase:
   - name: _ Venus6
     ParentObjFunc: SetParentObject

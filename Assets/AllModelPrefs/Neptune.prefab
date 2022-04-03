@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 3711383327438189349}
   - component: {fileID: 4222998099150183556}
   - component: {fileID: 2612350399941236491}
-  - component: {fileID: 2612350399941236495}
   - component: {fileID: 2612350399941234931}
-  - component: {fileID: 2612350399941234935}
+  - component: {fileID: 2262731443321178362}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -116,21 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
---- !u!114 &2612350399941236495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2918762505430700784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a709b887df70e143851eaaca988c867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedX: 0
-  speedY: -22
-  speedZ: 0
 --- !u!114 &2612350399941234931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,142 +128,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
---- !u!114 &2612350399941234935
+--- !u!114 &2262731443321178362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2918762505430700784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5859ad5190b98d14bbe69cc02cc0187d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IndicatorMeshTest: {fileID: 0}
-  DebugTXT:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  DebugUniqueTXT: {fileID: 0}
-  AnimPoint:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  AnimIndex: 0
-  allMarkers: []
-  DistanceAction: 2
-  AllVariantsActionsBase:
-  - name: _ Venus6
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 1
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _ Earth1
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 2
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _ Mars7
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 3
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _Jupiyer8
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 4
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _ Saturn10
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 1
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _ Uran9
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 2
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _ Neptune2
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 3
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _ Moon4
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 4
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
-  - name: _ Cometa13
-    ParentObjFunc: SetParentObject
-    delayA: 0.1
-    AnimIndexID: 5
-    AnimPlayFunc: PlayAnimator
-    delayB: 0.01
-    BaseFunc: NullFunc
-    "delay\u0421": 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 0.01
-    FuncOtdalF_B: NullFunc
-    delayF: 0.01
+  speedX: 0
+  speedY: -11
+  speedZ: 0
