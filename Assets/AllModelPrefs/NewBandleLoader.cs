@@ -109,8 +109,11 @@ public class NewBandleLoader : MonoBehaviour
         {
             File.WriteAllBytes(path, data);
             Debug.Log("Saved Data to: " + path.Replace("/", "\\"));
-            Invoke(nameof(SetInstance), 2); // инстансируем данные
-            LoaderUI.SetActive(false);
+            Invoke(nameof(SetInstance), 1); // инстансируем данные
+
+            //после загрузки ассетов перезагрузим весь уровень! 
+            LoaderUI.transform.GetChild(4).gameObject.SetActive(true);
+            Invoke(nameof(ReloadAllLevel), 2.2f);
         }
         catch (Exception e)
         {
@@ -119,7 +122,8 @@ public class NewBandleLoader : MonoBehaviour
         }
        
     }
-
+    void ReloadAllLevel()
+    { Application.LoadLevel(Application.loadedLevel); }    
 
        void SetInstance()
     {    // и пытаемся инстансировать его

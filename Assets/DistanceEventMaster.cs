@@ -92,7 +92,7 @@ public class DistanceEventMaster : MonoBehaviour
             }
 
         }
-        DebugTXT[rand].text = "    " + transform.parent.gameObject.name + "   " + oldName + " || " + this.gameObject.name + " || " + transform.parent.localPosition.x + " || " + transform.parent.localPosition.y + " || " + transform.parent.localPosition.z + " || ";
+       // DebugTXT[rand].text = "    " + transform.parent.gameObject.name + "   " + oldName + " || " + this.gameObject.name + " || " + transform.parent.localPosition.x + " || " + transform.parent.localPosition.y + " || " + transform.parent.localPosition.z + " || ";
     }
     public void SetMadkerDistDal() 
     {    

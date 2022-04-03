@@ -19,8 +19,43 @@ public class AnimatorFunc : MonoBehaviour
     {
        
         AnimatR.speed = 1;
-      
+        //enabb = true;
         scaleKostil.enabled = true;
         Debug.Log("AnimatorFunc " + scaleKostil.gameObject.name);
     }
+
+  /*  GameObject planetScalObj;
+
+    int adder = 0;
+    bool enabb = false;
+    void Update()
+    {
+
+        if (enabb)
+        {
+            adder++;
+            if (adder == 2)
+            {
+                if (transform.childCount == 0)
+                { enabb = false; adder = 0; }
+                else
+                    planetScalObj = transform.GetChild(0).gameObject;
+
+                // Debug.Log("tr " + transform.parent.gameObject.name);
+
+                if (planetScalObj == null) { this.gameObject.GetComponent<ScaleKostil>().enabled = false; adder = 0; }
+            }
+            if (adder > 75)
+            { enabb = false; adder = 0; }
+
+            if (adder > 2)
+                planetScalObj.transform.localScale = planetScalObj.transform.localScale * 0.99f;
+
+        }
+
+
+
+
+        //  }
+    }*/
 }

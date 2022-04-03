@@ -108,16 +108,16 @@ namespace UnityEngine.XR.ARFoundation.Samples
                         Debug.Log("Tracking State is " + trackedImage.trackingState);
                         Debug.Log("True");
                         DebTxtxA.text = trackedImage.name + " || " + trackedImage.tag + " || " + trackedImage.transform.GetChild(0).gameObject.name + " True Tracking State is " + trackedImage.trackingState;
-                        //  trackedImage.transform.GetChild(0).gameObject.SetActive(true);
-                       
-                        trackedImage.transform.GetChild(0).position = new Vector3(0, 0, 0);
+                        // trackedImage.transform.GetChild(0).gameObject.SetActive(true);
+
+                         trackedImage.transform.GetChild(0).localPosition = new Vector3(0, 0, 0);
                     }
                     else if (trackedImage.trackingState == TrackingState.None)
                     {
                         Debug.Log("false");
                         DebTxtxA.text = trackedImage.name + " || " + trackedImage.tag + " || " + trackedImage.transform.GetChild(0).gameObject.name + "  None Tracking State is " + trackedImage.trackingState;
                         //  trackedImage.transform.GetChild(0).gameObject.SetActive(false);
-                       // trackedImage.transform.GetChild(0).position = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
+                        trackedImage.transform.GetChild(0).localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
                     }
                     else
                     {
@@ -125,7 +125,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                         Debug.Log("false");
                         DebTxtxA.text = trackedImage.name + " || " + trackedImage.tag + " || " + trackedImage.transform.GetChild(0).gameObject.name + "  false Tracking State is " + trackedImage.trackingState;
                         //  trackedImage.transform.GetChild(0).gameObject.SetActive(false);
-                        trackedImage.transform.GetChild(0).position = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
+                        trackedImage.transform.GetChild(0).localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
                     }
                 }
             }

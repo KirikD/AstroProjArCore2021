@@ -15,7 +15,8 @@ public class AnimationByButton : MonoBehaviour
     }
     private void OnEnable()
     {
-        anim.Stop();
+        anim.Stop(); 
+        anim["Scene"].normalizedTime = 0;
     }
     // Update is called once per frame
     public void PlayStopAnimation(bool isPlay)
