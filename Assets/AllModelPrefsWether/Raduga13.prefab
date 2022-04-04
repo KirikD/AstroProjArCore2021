@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5199495926048990111}
   - component: {fileID: 5199495926048990110}
   - component: {fileID: 5199495926048990109}
+  - component: {fileID: 7884507171214258026}
   m_Layer: 0
   m_Name: Raduga13
   m_TagString: Untagged
@@ -113,6 +114,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &7884507171214258026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5199495926048990104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/rainbow
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 1}
+  ShadNames: []
+  texture: {fileID: 0}
 --- !u!1 &5199495927600732551
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +145,7 @@ GameObject:
   - component: {fileID: 5199495927600732555}
   - component: {fileID: 5199495927600732554}
   - component: {fileID: 5199495927600732549}
+  - component: {fileID: 9080571947585769657}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -211,3 +232,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &9080571947585769657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5199495927600732551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/rainbow
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 1}
+  ShadNames: []
+  texture: {fileID: 0}

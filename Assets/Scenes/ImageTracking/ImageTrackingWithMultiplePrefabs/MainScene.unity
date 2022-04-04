@@ -970,10 +970,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: BttLoadLevel
-        m_Mode: 5
+      - m_Target: {fileID: 8193716078720713214}
+        m_TargetAssemblyTypeName: NewBandleLoader, Assembly-CSharp
+        m_MethodName: ResetLoader
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11052,7 +11052,7 @@ MonoBehaviour:
   BundleFileName: CosmosFullBundle
   BundleLocalLoadPath: AssetData
   PrefabGameobjectName: asteroids
-  AssetDatBaseVersion: I
+  AssetDatBaseVersion: N
   isReservPref: 1
   ObjectsNames:
   - asteroids

@@ -14,7 +14,7 @@ public class NewBandleLoader : MonoBehaviour
     public string BundleLocalLoadPath = "Не нужно заполнять! поле забивается само!";
     public string PrefabGameobjectName = "asteroids";
     // вестия базы данных ассета любой стринг
-    public string AssetDatBaseVersion = "I";
+    public string AssetDatBaseVersion = "N";
     public bool isReservPref = false;
     void Start()
     {
@@ -24,7 +24,7 @@ public class NewBandleLoader : MonoBehaviour
 
         if (isReservPref == false)
         {
-            AssetDatBaseVersion = "I";
+            AssetDatBaseVersion = "N";
             // загрузили наш ассет из базы данных
             Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 10.0f));
 
@@ -33,7 +33,7 @@ public class NewBandleLoader : MonoBehaviour
         }
         if (isReservPref)
         {
-            AssetDatBaseVersion = "I";
+            AssetDatBaseVersion = "N";
             Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.9f, 2.0f));// загрузили наш ассет из базы данных
             var myLoadedAssetBundle = AssetBundle.LoadFromFile(Application.persistentDataPath + "/" + BundleFileFolderName + "/" + BundleFileName + AssetDatBaseVersion + ".unity3d");
             if (myLoadedAssetBundle == null)
@@ -64,6 +64,7 @@ public class NewBandleLoader : MonoBehaviour
             StartCoroutine(downloadAsset(UrlBundleDawnload));
         }
     }
+    public void ResetLoader() { PlayerPrefs.SetInt(BundleFileName + AssetDatBaseVersion, 1); Application.LoadLevel(Application.loadedLevel);  }
     public GameObject LoaderUI;
     IEnumerator downloadAsset(string URLpath)
     {

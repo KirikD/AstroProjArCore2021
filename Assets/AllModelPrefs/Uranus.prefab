@@ -549,7 +549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedX: 0
   speedY: 0
-  speedZ: 14
+  speedZ: 18
 --- !u!1 &7744660523350797910
 GameObject:
   m_ObjectHideFlags: 0
