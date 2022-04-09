@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Snow Full
   m_Shader: {fileID: 4800000, guid: 6b0539804dd76c14ab5d2bf3daedd291, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -59,12 +60,12 @@ Material:
     m_Floats:
     - _Aniso: 0.443
     - _Coverage: 0.5
-    - _Depth: -1.04
+    - _Depth: -0.26
     - _Glitter: 3.7
     - _RampPower: 1
-    - _Shininess: 0.052
+    - _Shininess: 0.128
     - _Smooth: 0.5
-    - _Specular: 3.63
+    - _Specular: 5
     - _Spread: 1
     - _Transition: 0.5
     - _TransitionSmooth: 0.5

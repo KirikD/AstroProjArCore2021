@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4628451864795780147}
   - component: {fileID: 4628451864777429363}
   - component: {fileID: 4628451864777337043}
-  - component: {fileID: 4628451864650369481}
   - component: {fileID: 4628451864650369482}
+  - component: {fileID: 8831227582329735906}
   m_Layer: 0
   m_Name: SevernoeSianie12
   m_TagString: Untagged
@@ -31,7 +31,9 @@ Transform:
   m_LocalPosition: {x: -0.017, y: -0, z: 0.017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4259285063374800454}
+  - {fileID: 8118253088538567334}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -635,7 +637,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 2, y: 2, z: 2}
+    m_Scale: {x: 3, y: 3, z: 3}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -833,7 +835,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 99
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -2078,12 +2080,12 @@ ParticleSystem:
         m_RotationOrder: 4
     m_Range: {x: 0, y: 1}
   ForceModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: -1
+      scalar: -0.03
+      minScalar: 0.03
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2117,8 +2119,8 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 3
-      scalar: -1
-      minScalar: 1
+      scalar: -0.01
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2152,8 +2154,8 @@ ParticleSystem:
     z:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: -1
+      scalar: -0.03
+      minScalar: 0.03
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4658,25 +4660,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &4628451864650369481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4628451864795547667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShaderName: Legacy Shaders/Particles/Additive (Soft)
-  TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
-  ColorV: {r: 1, g: 1, b: 1, a: 1}
-  ShadNames: []
-  texture: {fileID: 0}
 --- !u!114 &4628451864650369482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4690,3 +4673,302 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &8831227582329735906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4628451864795547667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/NordPole
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 0.03529412}
+  ShadNames: []
+  texture: {fileID: 0}
+--- !u!1001 &4365883939242926509
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4628451864795780147}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.522665
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.522665
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.645415
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.073
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.377
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.794
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+        type: 3}
+      propertyPath: m_Name
+      value: RadugaDug
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 480ecfbbab1a61c41b8434e81fd0ee23, type: 3}
+--- !u!1 &3483487712804429052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+    type: 3}
+  m_PrefabInstance: {fileID: 4365883939242926509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1719965460598287271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3483487712804429052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/NordPole
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 0.15294118}
+  ShadNames: []
+  texture: {fileID: 0}
+--- !u!4 &4259285063374800454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 480ecfbbab1a61c41b8434e81fd0ee23,
+    type: 3}
+  m_PrefabInstance: {fileID: 4365883939242926509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8584825533210182989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4628451864795780147}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.054244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.060509168
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05424399
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.714
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.603
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de4ee3209249eb74eb02317f0f7766c3,
+        type: 3}
+      propertyPath: m_Name
+      value: NorthPole
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de4ee3209249eb74eb02317f0f7766c3, type: 3}
+--- !u!1 &35929442449345221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8600970346110750600, guid: de4ee3209249eb74eb02317f0f7766c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8584825533210182989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4949612617211092751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35929442449345221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/NordPole
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 0.15294118}
+  ShadNames: []
+  texture: {fileID: 0}
+--- !u!1 &4016473326296238891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4656172685331156582, guid: de4ee3209249eb74eb02317f0f7766c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8584825533210182989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4429369222264020698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4016473326296238891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/NordPole
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 0.15294118}
+  ShadNames: []
+  texture: {fileID: 0}
+--- !u!1 &5234091802442485430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4647618514697581573, guid: de4ee3209249eb74eb02317f0f7766c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8584825533210182989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9192187903851973012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234091802442485430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderName: Legacy Shaders/Particles/Additive (Soft)
+  TexName: _MainTex
+  TexPath: Textures/NordPole
+  ColorN: _Color
+  ColorV: {r: 1, g: 1, b: 1, a: 0.15294118}
+  ShadNames: []
+  texture: {fileID: 0}
+--- !u!4 &8118253088538567334 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: de4ee3209249eb74eb02317f0f7766c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8584825533210182989}
+  m_PrefabAsset: {fileID: 0}

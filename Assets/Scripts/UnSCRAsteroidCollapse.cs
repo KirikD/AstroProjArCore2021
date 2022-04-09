@@ -16,7 +16,7 @@ public class UnSCRAsteroidCollapse : MonoBehaviour
         //  
         for (int i = 0; i < planetsNames.Length; i++)
         {
-            if (other.gameObject.name == planetsNames[i] || other.tag == "DebText")
+            if (other.gameObject.name == planetsNames[i] || other.gameObject.tag == "DebText")
             {
                 Debug.Log("CollapsErtgh!!" + planetsNames[i]);
                 //Destroy(this.gameObject);
@@ -29,6 +29,19 @@ public class UnSCRAsteroidCollapse : MonoBehaviour
                 EnableEffect.SetActive(true);
             }
         }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        for (int i = 0; i < planetsNames.Length; i++)
+        {
+            //Check for a match with the specified name on any GameObject that collides with your GameObject
+            if (collision.gameObject.name == planetsNames[i] || collision.gameObject.tag == "DebText")
+            {
+                //If the GameObject's name matches the one you suggest, output this message in the console
+                Debug.Log("Do something here");
+            }
+        }
+
     }
     void DelXlam()
     {
@@ -46,7 +59,7 @@ public class UnSCRAsteroidCollapse : MonoBehaviour
     }
         void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "Earth")
+        if (other.gameObject.name == "Earth ")
         //Object name is the name of the GameObject you want to check for collisions with.
         {
             //What you want to do on trigger enter

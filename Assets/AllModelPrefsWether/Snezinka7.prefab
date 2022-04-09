@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 853873912748023423}
   - component: {fileID: 3187816834246208181}
   - component: {fileID: 4322597080676955701}
+  - component: {fileID: 2490587284878160145}
   m_Layer: 0
   m_Name: Snezinka7
   m_TagString: Untagged
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2ebfcfa18a7c4c94780b2d5ec760a26d, type: 2}
+  - {fileID: 2100000, guid: 1dd04c58a19db5b4e9d87b36b18a6d80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,3 +98,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &2490587284878160145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3980508024483531616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 44
+  speedZ: 0

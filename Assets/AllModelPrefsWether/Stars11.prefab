@@ -44,7 +44,7 @@ ParticleSystem:
   m_GameObject: {fileID: 4791566070356969074}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.1
+  simulationSpeed: 0.05
   stopAction: 0
   cullingMode: 3
   ringBufferMode: 0
@@ -287,8 +287,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.0016
-      minScalar: 0.01
+      scalar: 0.016
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -833,7 +833,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1000
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1271,9 +1271,9 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.495283, b: 0.495283, a: 0}
-        key1: {r: 0.5235849, g: 0.57813364, b: 1, a: 1}
-        key2: {r: 0.5518868, g: 0.7887835, b: 1, a: 1}
+        key0: {r: 1, g: 0.7971698, b: 0.7971698, a: 0}
+        key1: {r: 0.7971698, g: 0.8189615, b: 1, a: 1}
+        key2: {r: 0.6462264, g: 0.832423, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1440,8 +1440,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     speedRange: {x: 0, y: 1}
-    tilesX: 2
-    tilesY: 2
+    tilesX: 1
+    tilesY: 1
     animationType: 0
     rowIndex: 0
     cycles: 1
@@ -2596,7 +2596,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4745,7 +4745,7 @@ MonoBehaviour:
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
   TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
