@@ -212,6 +212,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnableEffect: {fileID: 6078078908494173032}
+  planetsNames:
+  - Black hole p1_Complete2
+  - Earth
+  - galaxy
+  - jupiter
+  - Marc_export
+  - Mercury_1K
+  - moon_export
+  - moon_export2
+  - Neptune
+  - Saturn
+  - SolarSystemContainer
+  - Sun
+  - Uranus
+  - Venus_1K
+  - wormhole3_export
 --- !u!1001 &6078078907670495845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -346,6 +362,10 @@ PrefabInstance:
     - target: {fileID: 19800000, guid: 031827899cbc03c45a926fcdf6b3a5f7, type: 3}
       propertyPath: moveWithCustomTransform
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 031827899cbc03c45a926fcdf6b3a5f7, type: 3}
+      propertyPath: ClampVelocityModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 031827899cbc03c45a926fcdf6b3a5f7, type: 3}
       propertyPath: NoiseModule.strength.scalar
@@ -487,6 +507,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078907670495845}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &899045016142634247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078078907670529221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4656b1c1bceced4d980368a487919f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &9074961946165954299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,18 +538,6 @@ MonoBehaviour:
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
---- !u!114 &899045016142634247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078078907670529221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4656b1c1bceced4d980368a487919f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6078078907959147920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -614,35 +634,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078907959147920}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &6078078907959147912
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6384069357810467009}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!135 &6078078907959147927
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6384069357810467009}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.15
-  m_Center: {x: 0.00040962637, y: -0.00025533274, z: 0.00040927008}
 --- !u!114 &4505418151891496581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +676,18 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -730,6 +733,34 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
       value: 3
@@ -746,6 +777,14 @@ PrefabInstance:
       propertyPath: InitialModule.startRotationY.minMaxState
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800008, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 19800008, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
       value: 3
@@ -761,6 +800,26 @@ PrefabInstance:
     - target: {fileID: 19800008, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
       propertyPath: InitialModule.startRotationY.minMaxState
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800012, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800014, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f1c6999e37f5846a45fc5177121b16, type: 3}
@@ -770,7 +829,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284836646160381
+--- !u!114 &8038167459147636489
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -784,8 +843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -795,7 +854,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284838219983413
+--- !u!114 &2823657315357366190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -809,8 +868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -820,7 +879,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284837947919911
+--- !u!114 &4240649736895442951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -834,8 +893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -845,7 +904,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284837124718891
+--- !u!114 &1900228893347245726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -859,8 +918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -870,7 +929,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284836311440755
+--- !u!114 &5366105667978245614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -884,8 +943,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -895,7 +954,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284836177801969
+--- !u!114 &8255505079716622548
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -909,8 +968,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -920,7 +979,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284837951344039
+--- !u!114 &3517337977320929349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -934,8 +993,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -945,7 +1004,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908021325618}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284837269853456
+--- !u!114 &1134346072599892149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -959,8 +1018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -1100,6 +1159,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 031827899cbc03c45a926fcdf6b3a5f7, type: 3}
+      propertyPath: ClampVelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 031827899cbc03c45a926fcdf6b3a5f7, type: 3}
       propertyPath: NoiseModule.strength.scalar
       value: 0.1
       objectReference: {fileID: 0}
@@ -1231,6 +1294,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908109052973}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6762700740814288301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078078908109150861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4656b1c1bceced4d980368a487919f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8788284836956586679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,18 +1325,6 @@ MonoBehaviour:
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
---- !u!114 &6762700740814288301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078078908109150861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4656b1c1bceced4d980368a487919f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6078078908109178541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 031827899cbc03c45a926fcdf6b3a5f7,
@@ -1343,7 +1406,8 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 5acf809cbfc2a9746855279a7c880749, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 4011e3c5647bca847b5e2d66d72cf7aa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4011e3c5647bca847b5e2d66d72cf7aa, type: 3}
 --- !u!4 &6078078908493811528 stripped
 Transform:
@@ -1357,7 +1421,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908494206410}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284836500130647
+--- !u!114 &9030030782168387745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1371,8 +1435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -1382,7 +1446,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6078078908494206410}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8788284836739776268
+--- !u!114 &875894355820862138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1396,8 +1460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/dir_expl1
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}

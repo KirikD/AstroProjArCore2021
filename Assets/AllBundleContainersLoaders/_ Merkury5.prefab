@@ -227,6 +227,7 @@ MonoBehaviour:
   PrefabGameobjectName: Mercury_1K
   AssetDatBaseVersion: A
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -592,7 +593,7 @@ MonoBehaviour:
   IndicatorMeshTest: {fileID: 4954436320018094199}
   DebugTXT: []
   AnimPoint:
-  - {fileID: 0}
+  - {fileID: 4954436319100476531}
   - {fileID: 4954436319100476531}
   - {fileID: 4954436318874787219}
   - {fileID: 4954436319428574585}
@@ -600,7 +601,7 @@ MonoBehaviour:
   - {fileID: 4954436320339244060}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.2
+  DistanceAction: 0.14
   AllVariantsActionsBase:
   - name: _ Venus6
     ParentObjFunc: SetParentObject
@@ -708,7 +709,7 @@ MonoBehaviour:
     "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
 --- !u!1 &4954436320580325067
 GameObject:

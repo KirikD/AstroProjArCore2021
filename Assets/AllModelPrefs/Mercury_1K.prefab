@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 1480320687032727760}
   - component: {fileID: 1480320687032728360}
   - component: {fileID: 4856855563976914407}
+  - component: {fileID: -6447113358412542351}
   m_Layer: 0
   m_Name: Mercury_1K
-  m_TagString: Untagged
+  m_TagString: DebText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,5 +156,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 0
-  speedY: 18
+  speedY: 35
   speedZ: 0
+--- !u!114 &-6447113358412542351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750297183262548267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cb4278b4f0b1a49b2475f3638c65a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnableEffect: {fileID: 0}
+  planetsNames:
+  - wormhole3_export

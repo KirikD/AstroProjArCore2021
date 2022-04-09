@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 1009808464106863392}
   - component: {fileID: 1009808464106863397}
   - component: {fileID: 1009808464106863417}
+  - component: {fileID: -7842450689607583290}
   m_Layer: 0
   m_Name: Earth
-  m_TagString: Untagged
+  m_TagString: DebText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 22
+  speedX: 44
   speedY: 0
   speedZ: 0
 --- !u!114 &1009808464106863417
@@ -167,6 +168,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &-7842450689607583290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198974923457049723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cb4278b4f0b1a49b2475f3638c65a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnableEffect: {fileID: 0}
+  planetsNames:
+  - wormhole3_export
 --- !u!1 &961203220100910864
 GameObject:
   m_ObjectHideFlags: 0

@@ -69,6 +69,7 @@ MonoBehaviour:
   PrefabGameobjectName: Sun
   AssetDatBaseVersion: E
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -607,7 +608,7 @@ MonoBehaviour:
   - {fileID: 7698845912114058771}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.25
+  DistanceAction: 0.14
   AllVariantsActionsBase:
   - name: _ Venus6
     ParentObjFunc: SetParentObject
@@ -720,14 +721,14 @@ MonoBehaviour:
   - name: _ Cometa13
     ParentObjFunc: SetParentObject
     delayA: 0.1
-    AnimIndexID: 10
+    AnimIndexID: 11
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
     "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
 --- !u!1 &7698845912432512479
 GameObject:

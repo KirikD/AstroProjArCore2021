@@ -69,6 +69,7 @@ MonoBehaviour:
   PrefabGameobjectName: asteroids
   AssetDatBaseVersion: A
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -98,6 +99,7 @@ GameObject:
   - component: {fileID: 5412980102249335945}
   - component: {fileID: 5412980102249335941}
   - component: {fileID: 5412980102249335942}
+  - component: {fileID: 2973193675423807896}
   m_Layer: 0
   m_Name: _ Cometa13
   m_TagString: MarkerTarg
@@ -172,6 +174,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5412980102249335943}
   m_Mesh: {fileID: 0}
+--- !u!114 &2973193675423807896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5412980102249335943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5859ad5190b98d14bbe69cc02cc0187d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IndicatorMeshTest: {fileID: 6987746828164322911, guid: 1ce0b3accd65b0e4598e421e61a600a3,
+    type: 3}
+  DebugTXT: []
+  AnimPoint: []
+  AnimIndex: 0
+  allMarkers: []
+  DistanceAction: 0.14
+  AllVariantsActionsBase:
+  - name: _ Cometa13__
+    ParentObjFunc: SetParentObject
+    delayA: 0.1
+    AnimIndexID: 1
+    AnimPlayFunc: PlayAnimator
+    delayB: 0.01
+    BaseFunc: NullFunc
+    "delay\u0421": 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.01
+    FuncOtdalF_B: ReturnPlanetParent
+    delayF: 0.01
 --- !u!1 &5412980102848371914
 GameObject:
   m_ObjectHideFlags: 0

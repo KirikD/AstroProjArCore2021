@@ -144,7 +144,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
         {
             while (true)
             {
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(0.4f);
                 objToHidge.localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));
             }
         }

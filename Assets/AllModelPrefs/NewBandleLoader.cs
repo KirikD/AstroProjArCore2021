@@ -4,38 +4,45 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
-
+using UnityEngine.UI;
 public class NewBandleLoader : MonoBehaviour
 {
     public string UrlBundleDawnload = "http://kirikd.ru/AstroProject/cosmos";
     public string BundleFileFolderName = "AssetData";
     public string BundleFileName = "CosmosFullBundle";
 
-    public string BundleLocalLoadPath = "Не нужно заполнять! поле забивается само!";
+    public string BundleLocalLoadPath = "?? ????? ?????????! ???? ?????????? ????!";
     public string PrefabGameobjectName = "asteroids";
-    // вестия базы данных ассета любой стринг
-    public string AssetDatBaseVersion = "N";
+    // ?????? ???? ?????? ?????? ????? ??????
+    public string AssetDatBaseVersion = "K";
     public bool isReservPref = false;
+
+    public Text debtxtG;
     void Start()
     {
-     //   AssetDatBaseVersion = "T";
-        // загрузили наш ассет из базы данных
-      //  Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 10.0f));
+        debtxtG.text = Application.persistentDataPath + "/" + BundleFileFolderName + "/" + BundleFileName + AssetDatBaseVersion + ".unity3d";
+        //   AssetDatBaseVersion = "T";
+        // ????????? ??? ????? ?? ???? ??????
+        //  Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 10.0f));
 
         if (isReservPref == false)
         {
-            AssetDatBaseVersion = "N";
-            // загрузили наш ассет из базы данных
+            AssetDatBaseVersion = "K";
+            // ????????? ??? ????? ?? ???? ??????
             Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 10.0f));
 
-            // Если ассет скачан то пытаемся инстансировать его сразу
+            // ???? ????? ?????? ?? ???????? ?????????????? ??? ?????
             SetInstance();
         }
         if (isReservPref)
         {
-            AssetDatBaseVersion = "N";
-            Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.9f, 2.0f));// загрузили наш ассет из базы данных
+            AssetDatBaseVersion = "K";
+            Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.9f, 2.0f));// ????????? ??? ????? ?? ???? ??????
+
+            //var myLoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "cosmos"));
             var myLoadedAssetBundle = AssetBundle.LoadFromFile(Application.persistentDataPath + "/" + BundleFileFolderName + "/" + BundleFileName + AssetDatBaseVersion + ".unity3d");
+
+
             if (myLoadedAssetBundle == null)
             {
                 Debug.Log("Failed to load AssetBundle!");
@@ -56,11 +63,11 @@ public class NewBandleLoader : MonoBehaviour
     public string[] ObjectsNames; public GameObject[] ObjectsGam;
     void LoadAssetBundleFromURL()
     {
-        // скачиваем префаб
-        if (PlayerPrefs.GetInt(BundleFileName + AssetDatBaseVersion) != 10)
+        // ????????? ??????
+        if (PlayerPrefs.GetInt(BundleFileName + AssetDatBaseVersion) != 2)
         {
             Debug.Log("OnceAlltime");
-            PlayerPrefs.SetInt(BundleFileName + AssetDatBaseVersion, 10);
+            PlayerPrefs.SetInt(BundleFileName + AssetDatBaseVersion, 2);
             StartCoroutine(downloadAsset(UrlBundleDawnload));
         }
     }
@@ -110,9 +117,9 @@ public class NewBandleLoader : MonoBehaviour
         {
             File.WriteAllBytes(path, data);
             Debug.Log("Saved Data to: " + path.Replace("/", "\\"));
-            Invoke(nameof(SetInstance), 1); // инстансируем данные
+            Invoke(nameof(SetInstance), 1); // ???????????? ??????
 
-            //после загрузки ассетов перезагрузим весь уровень! 
+            //????? ???????? ??????? ???????????? ???? ???????! 
             LoaderUI.transform.GetChild(4).gameObject.SetActive(true);
             Invoke(nameof(ReloadAllLevel), 2.2f);
         }
@@ -127,8 +134,8 @@ public class NewBandleLoader : MonoBehaviour
     { Application.LoadLevel(Application.loadedLevel); }    
 
        void SetInstance()
-    {    // и пытаемся инстансировать его
-        BundleLocalLoadPath = Application.persistentDataPath + "/" + BundleFileFolderName + "/" + BundleFileName + AssetDatBaseVersion + ".unity3d";
+    {    // ? ???????? ?????????????? ???
+        BundleLocalLoadPath = "file://" + Application.persistentDataPath + "/" + BundleFileFolderName + "/" + BundleFileName + AssetDatBaseVersion + ".unity3d";
         StartCoroutine(LoadObject(BundleLocalLoadPath));
     }
     GameObject InstancedBandle;

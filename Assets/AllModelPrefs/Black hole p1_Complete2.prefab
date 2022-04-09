@@ -407,9 +407,10 @@ GameObject:
   - component: {fileID: 8125310098186814554}
   - component: {fileID: 8125310098186814498}
   - component: {fileID: 8623615230363757924}
+  - component: {fileID: 828243614335867376}
   m_Layer: 0
   m_Name: Black hole p1_Complete2
-  m_TagString: Untagged
+  m_TagString: DebText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -541,5 +542,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 0
-  speedY: 51
+  speedY: 99
   speedZ: 0
+--- !u!135 &828243614335867376
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936144062723717382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0.04500008, y: 0.010544542, z: -0.0068022036}

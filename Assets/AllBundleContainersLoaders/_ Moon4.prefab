@@ -276,7 +276,7 @@ MonoBehaviour:
   - {fileID: 5506948157054759076}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.2
+  DistanceAction: 0.14
   AllVariantsActionsBase:
   - name: _ Earth1__
     ParentObjFunc: SetParentObject
@@ -290,7 +290,7 @@ MonoBehaviour:
     delayE: 0.01
     FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
-  - name: dfgsdfgs
+  - name: _ Cometa13
     ParentObjFunc: SetParentObject
     delayA: 0.1
     AnimIndexID: 4
@@ -459,9 +459,10 @@ MonoBehaviour:
   BundleFileFolderName: AssetData
   BundleFileName: CosmosFullBundle
   BundleLocalLoadPath: AssetData
-  PrefabGameobjectName: moon_export2
+  PrefabGameobjectName: moon_export
   AssetDatBaseVersion: A
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -472,14 +473,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5506948156370431512}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0153e57f592b8d14bb5fd5e96e76a299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   newBandleLoader: {fileID: 0}
   ObjectsGameobj: {fileID: 0}
-  name: moon_export2
+  name: moon_export
 --- !u!1 &5506948156496989633
 GameObject:
   m_ObjectHideFlags: 0

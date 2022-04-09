@@ -51,9 +51,9 @@ MonoBehaviour:
       m_GuidLow: 4971885296832352268
       m_GuidHigh: 17793072381991857596
     m_SerializedTextureGuid:
-      m_GuidLow: 9945229350026150103
-      m_GuidHigh: 13673626213338713195
-    m_Size: {x: 0.1, y: 0.111634545}
+      m_GuidLow: 16916859480355538236
+      m_GuidHigh: 8646599212635028569
+    m_Size: {x: 0.1, y: 0.11153213}
     m_SpecifySize: 1
     m_Name: S4_Moon
     m_Texture: {fileID: 0}
@@ -111,9 +111,9 @@ MonoBehaviour:
       m_GuidLow: 5451468487369236765
       m_GuidHigh: 4376768587307608243
     m_SerializedTextureGuid:
-      m_GuidLow: 7580923593302071890
-      m_GuidHigh: 17060802315493238331
-    m_Size: {x: 0.1, y: 0.11116643}
+      m_GuidLow: 16709604135135605888
+      m_GuidHigh: 6631133450170620137
+    m_Size: {x: 0.1, y: 0.11183638}
     m_SpecifySize: 1
     m_Name: S10_Saturn
     m_Texture: {fileID: 0}
@@ -151,9 +151,9 @@ MonoBehaviour:
       m_GuidLow: 4879942101489920504
       m_GuidHigh: 4709893965812604808
     m_SerializedTextureGuid:
-      m_GuidLow: 4923626770747622955
-      m_GuidHigh: 8043051398086435610
-    m_Size: {x: 0.1, y: 0.11176471}
+      m_GuidLow: 13962544241539357910
+      m_GuidHigh: 4767902276185999817
+    m_Size: {x: 0.1, y: 0.112007014}
     m_SpecifySize: 1
     m_Name: S14_Galaxy
     m_Texture: {fileID: 0}

@@ -106,20 +106,24 @@ public class RotateVarTwo : MonoBehaviour
 
         if (m_right)
         {
-            rotPose = 9; 
+            rotPose = 13; 
             //m_objecttorotate.transform.Rotate(Vector3.up * Time.deltaTime * 200f);
             tr = Quaternion.AngleAxis(rotPose, transform.parent.up);
             // StartCoroutine(ChangeSpeed(100f, 40f, 2f));
         }
         else
         {
-            rotPose = -9;
+            rotPose = -13;
             tr = Quaternion.AngleAxis(rotPose, transform.parent.up);
             //m_objecttorotate.transform.Rotate(Vector3.down * Time.deltaTime * 200f);
             //StartCoroutine(ChangeSpeed(100f, 40f, 2f));
         }
     }
-    IEnumerator ChangeSpeed(float v_start, float v_end, float duration)
+    public void Null_Rotating()
+    {
+        transform.rotation = Quaternion.EulerAngles(Vector3.zero);
+    }
+        IEnumerator ChangeSpeed(float v_start, float v_end, float duration)
     {
         float elapsed = 0.0f;
         while (elapsed < duration)

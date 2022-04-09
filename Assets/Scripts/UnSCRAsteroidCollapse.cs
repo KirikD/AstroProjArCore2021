@@ -9,27 +9,42 @@ public class UnSCRAsteroidCollapse : MonoBehaviour
     {
         
     }
-    public GameObject EnableEffect;
+    public GameObject EnableEffect; // эффект который запускаем когда сколлапсились
+    public string[] planetsNames;
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Earth")
-        //Object name is the name of the GameObject you want to check for collisions with.
+        //  
+        for (int i = 0; i < planetsNames.Length; i++)
         {
-            Debug.Log("CollapsErtgh!!");
-            //Destroy(this.gameObject);
-           
-            EnableEffect.SetActive(true);
-            Invoke("DelXlam",9);
-            this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            if (other.gameObject.name == planetsNames[i] || other.tag == "DebText")
+            {
+                Debug.Log("CollapsErtgh!!" + planetsNames[i]);
+                //Destroy(this.gameObject);
+
+              
+                Invoke("DelXlam", 3);
+                this.gameObject.SetActive(false);
+
+                EnableEffect.transform.SetParent(null, true);
+                EnableEffect.SetActive(true);
+            }
         }
     }
     void DelXlam()
     {
-        Destroy(EnableEffect);
-        Destroy(this.gameObject.GetComponent<UnSCRAsteroidCollapse>());
-        this.gameObject.SetActive(false);
+     //  Invoke("ShowlXlam", 3);
+       
+        //Destroy(this.gameObject.GetComponent<UnSCRAsteroidCollapse>());
+        this.gameObject.SetActive(true);
+        EnableEffect.SetActive(false);
+        EnableEffect.transform.SetParent(transform, true);
+        EnableEffect.transform.localPosition = Vector3.zero;
     }
-    void OnTriggerExit(Collider other)
+    void ShowlXlam()
+    {
+      this.gameObject.SetActive(true); EnableEffect.SetActive(false);
+    }
+        void OnTriggerExit(Collider other)
     {
         if (other.gameObject.name == "Earth")
         //Object name is the name of the GameObject you want to check for collisions with.

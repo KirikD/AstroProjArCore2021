@@ -114,7 +114,7 @@ MonoBehaviour:
   - {fileID: 6358499208021123674}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.2
+  DistanceAction: 0.14
   AllVariantsActionsBase:
   - name: _ Earth1
     ParentObjFunc: SetParentObject
@@ -164,7 +164,7 @@ MonoBehaviour:
     delayE: 0.01
     FuncOtdalF_B: NullFReturnPlanetParentunc
     delayF: 0.01
-  - name: _ Neptune2
+  - name: _ Neptune2__
     ParentObjFunc: SetParentObject
     delayA: 0.1
     AnimIndexID: 3
@@ -198,7 +198,7 @@ MonoBehaviour:
     "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
 --- !u!1 &6358499207128623076
 GameObject:
@@ -747,6 +747,7 @@ MonoBehaviour:
   PrefabGameobjectName: Saturn
   AssetDatBaseVersion: A
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}

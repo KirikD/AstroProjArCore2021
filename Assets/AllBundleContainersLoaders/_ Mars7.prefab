@@ -547,6 +547,7 @@ MonoBehaviour:
   PrefabGameobjectName: Marc_export
   AssetDatBaseVersion: A
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -679,9 +680,9 @@ MonoBehaviour:
   - {fileID: 5108937030657197449}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.2
+  DistanceAction: 0.14
   AllVariantsActionsBase:
-  - name: _ Earth1
+  - name: _ Earth1___
     ParentObjFunc: SetParentObject
     delayA: 0.1
     AnimIndexID: 2
@@ -763,5 +764,5 @@ MonoBehaviour:
     "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01

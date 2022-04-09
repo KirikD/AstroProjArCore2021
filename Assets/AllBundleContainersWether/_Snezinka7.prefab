@@ -29,7 +29,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5644433021407628383}
   m_RootOrder: 0
@@ -69,6 +68,7 @@ MonoBehaviour:
   PrefabGameobjectName: Snezinka7
   AssetDatBaseVersion: E
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -115,7 +115,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5644433021407628383}
   m_RootOrder: 1
@@ -139,7 +138,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -199,7 +197,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5644433019587755304}
   - {fileID: 5644433021225112817}
@@ -217,7 +214,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -281,7 +277,7 @@ MonoBehaviour:
   - {fileID: 0}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.2
+  DistanceAction: 0.12
   AllVariantsActionsBase:
   - name: sdfsd
     ParentObjFunc: GrozaInCiclonFunctionOn
@@ -290,7 +286,7 @@ MonoBehaviour:
     AnimPlayFunc: NullFunc
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    delayC: 0.01
     FuncOtdalF_A: NullFunc
     delayE: 2
     FuncOtdalF_B: GrozaInCiclonFunctionOff

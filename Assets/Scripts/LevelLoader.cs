@@ -47,16 +47,29 @@ public class LevelLoader : MonoBehaviour
 
     void LoadShowC()
     {     loa3.SetActive(true); }
-
+    public GameObject OncesStartScrG;
     void Start()
     {
         Resources.UnloadUnusedAssets();
         Invoke("LoadShowFinishA", 0.01f);
-        Invoke("LoadShowFinishB", 0.99f);
+        Invoke("LoadShowFinishB", 1.99f);
 
 
     }
-    
+    private void Awake()
+    {
+        // ????????? ??????
+        if (PlayerPrefs.GetInt("OncesStartScr") != 5)
+        {
+            Debug.Log("OnceAlltimeOncesStartScr");
+            PlayerPrefs.SetInt("OncesStartScr", 5);
+            OncesStartScrG.SetActive(true);
+        }
+        else
+        {
+            OncesStartScrG.SetActive(false);
+        }
+    }
     void LoadShowFinishA()
     { loaF1.SetActive(true); }
         void LoadShowFinishB()

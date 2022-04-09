@@ -310,6 +310,7 @@ MonoBehaviour:
   PrefabGameobjectName: Neptune
   AssetDatBaseVersion: A
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -521,7 +522,7 @@ MonoBehaviour:
   - {fileID: 3788892909748416144}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.2
+  DistanceAction: 0.14
   AllVariantsActionsBase:
   - name: _ Earth1__
     ParentObjFunc: SetParentObject

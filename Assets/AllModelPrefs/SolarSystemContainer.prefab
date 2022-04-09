@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5950285000296221126}
   - component: {fileID: 5950285000296221127}
   - component: {fileID: 4678204348876293615}
+  - component: {fileID: 3734496314197295358}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -196,7 +197,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 42
-  speed: 0.051
+  speed: 1
+--- !u!114 &3734496314197295358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285000296221130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 100
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285000456916013
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 4
-  speed: -4.15
+  speed: 40
 --- !u!114 &5412219548766850927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0ed7f5c6840b44ebad078198996663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 40
 --- !u!1 &5950285000587138850
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +567,7 @@ GameObject:
   - component: {fileID: 5950285000737937057}
   - component: {fileID: 5950285000737937058}
   - component: {fileID: 4526600130381442069}
+  - component: {fileID: 6134131638043389579}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -649,7 +666,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 22
-  speed: 0.085
+  speed: 3
+--- !u!114 &6134131638043389579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285000737937061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 200
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285000775621981
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +731,7 @@ GameObject:
   - component: {fileID: 5950285000827902310}
   - component: {fileID: 5950285000827902311}
   - component: {fileID: 1908517064081028196}
+  - component: {fileID: 4849319528371082617}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -800,7 +833,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0ed7f5c6840b44ebad078198996663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.7
+  speed: 9
+--- !u!114 &4849319528371082617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285000827902313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 120
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285000831324131
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +862,7 @@ GameObject:
   - component: {fileID: 5950285000831324127}
   m_Layer: 0
   m_Name: SolarSystemContainer
-  m_TagString: Untagged
+  m_TagString: DebText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -976,6 +1024,7 @@ GameObject:
   - component: {fileID: 5950285000897221697}
   - component: {fileID: 5950285000897221698}
   - component: {fileID: 4926230286175955315}
+  - component: {fileID: 7511103883195253501}
   m_Layer: 0
   m_Name: Uran
   m_TagString: Untagged
@@ -1074,7 +1123,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 52
-  speed: 0.04
+  speed: 0.5
+--- !u!114 &7511103883195253501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285000897221701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 75
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285001076524045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1183,7 @@ GameObject:
   - component: {fileID: 5950285001211375206}
   - component: {fileID: 5950285001211375204}
   - component: {fileID: 7905580206695844082}
-  - component: {fileID: 732405508695057862}
+  - component: {fileID: 7695510408116859344}
   m_Layer: 0
   m_Name: EarthSystem
   m_TagString: Untagged
@@ -1171,8 +1235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 30
-  speed: 8
---- !u!114 &732405508695057862
+  speed: 55
+--- !u!114 &7695510408116859344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1181,12 +1245,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5950285001211375208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5a4b4cd0e61a32459ec3c2022003375, type: 3}
+  m_Script: {fileID: 11500000, guid: a511954f135d52c4181893be221d616b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 15
-  speed: 0.1
-  selfSpeed: 4
+  speed: 4.5
 --- !u!1 &5950285001343846543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1263,7 @@ GameObject:
   - component: {fileID: 5950285001343846539}
   - component: {fileID: 5950285001343846540}
   - component: {fileID: 3929507957936520252}
+  - component: {fileID: 7995647959775300895}
   m_Layer: 0
   m_Name: Upiter
   m_TagString: Untagged
@@ -1298,7 +1362,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 30
-  speed: 0.06
+  speed: 1.5
+--- !u!114 &7995647959775300895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285001343846543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 250
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285001557815653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1423,7 @@ GameObject:
   - component: {fileID: 5950285001615161404}
   - component: {fileID: 5950285001615161405}
   - component: {fileID: 8329202528924269809}
+  - component: {fileID: 3970161023189589716}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -1443,7 +1523,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 63
-  speed: 0.03
+  speed: 0.2
+--- !u!114 &3970161023189589716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285001615162304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 60
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285001666049104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1584,7 @@ GameObject:
   - component: {fileID: 5950285001684541906}
   - component: {fileID: 5950285001684541907}
   - component: {fileID: 4298843779246217022}
+  - component: {fileID: 2580954596710232050}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -1587,7 +1683,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 5
-  speed: 0.161
+  speed: 8
+--- !u!114 &2580954596710232050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285001684541910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 5
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285001822320044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,7 +1895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.001
-  speed: 0.1
+  speed: 1
 --- !u!1 &5950285002050706765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,6 +1909,7 @@ GameObject:
   - component: {fileID: 5950285002050706761}
   - component: {fileID: 5950285002050706762}
   - component: {fileID: 8922411504409797984}
+  - component: {fileID: 537363472245341044}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -1896,7 +2008,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 10
-  speed: 0.1176
+  speed: 6.5
+--- !u!114 &537363472245341044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950285002050706765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 20
+  speedY: 0
+  speedZ: 0
 --- !u!1 &5950285002167505821
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,400 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &134007618973733721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4411847754764734088}
+  - component: {fileID: 1179928107546280405}
+  - component: {fileID: 6007139365423746689}
+  - component: {fileID: 1728202225212993735}
+  m_Layer: 0
+  m_Name: BlackHolrVoronkaAnim (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4411847754764734088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134007618973733721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7829191308164896480}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1179928107546280405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134007618973733721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537335aed57c5504683a214bd7b1b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatR: {fileID: 0}
+--- !u!95 &6007139365423746689
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134007618973733721}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d229f46aa10a44f9da95cbf0abfb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1728202225212993735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134007618973733721}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14cd4132bfdd654b9c1d711e81f7b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3758090050969819992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6884096011387797776}
+  - component: {fileID: 4687115410275192643}
+  - component: {fileID: 5543908309825556272}
+  - component: {fileID: 4376697484217007023}
+  m_Layer: 0
+  m_Name: BlackHolrVoronkaAnim (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6884096011387797776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758090050969819992}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7829191308164896480}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4687115410275192643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758090050969819992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537335aed57c5504683a214bd7b1b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatR: {fileID: 0}
+--- !u!95 &5543908309825556272
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758090050969819992}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d229f46aa10a44f9da95cbf0abfb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4376697484217007023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758090050969819992}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14cd4132bfdd654b9c1d711e81f7b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4177988676571205395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128013752196706551}
+  - component: {fileID: 3603838014333693904}
+  - component: {fileID: 4019265178397563237}
+  - component: {fileID: 2985096250723802603}
+  m_Layer: 0
+  m_Name: BlackHolrVoronkaAnim (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &128013752196706551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177988676571205395}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7829191308164896480}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3603838014333693904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177988676571205395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537335aed57c5504683a214bd7b1b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatR: {fileID: 0}
+--- !u!95 &4019265178397563237
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177988676571205395}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d229f46aa10a44f9da95cbf0abfb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2985096250723802603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177988676571205395}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14cd4132bfdd654b9c1d711e81f7b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7032344716540229092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9177702498068112526}
+  - component: {fileID: 4403277192050491796}
+  - component: {fileID: 6741497556332509092}
+  - component: {fileID: 6524840839578795400}
+  m_Layer: 0
+  m_Name: BlackHolrVoronkaAnim (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9177702498068112526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032344716540229092}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7829191308164896480}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4403277192050491796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032344716540229092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537335aed57c5504683a214bd7b1b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatR: {fileID: 0}
+--- !u!95 &6741497556332509092
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032344716540229092}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d229f46aa10a44f9da95cbf0abfb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6524840839578795400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032344716540229092}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14cd4132bfdd654b9c1d711e81f7b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7533591839767379227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3850299222676772600}
+  - component: {fileID: 5445913732827798691}
+  - component: {fileID: 9162787558313275639}
+  - component: {fileID: 633503764534826927}
+  m_Layer: 0
+  m_Name: BlackHolrVoronkaAnim (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3850299222676772600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533591839767379227}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7829191308164896480}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5445913732827798691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533591839767379227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537335aed57c5504683a214bd7b1b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatR: {fileID: 0}
+--- !u!95 &9162787558313275639
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533591839767379227}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d229f46aa10a44f9da95cbf0abfb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &633503764534826927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533591839767379227}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14cd4132bfdd654b9c1d711e81f7b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7829191307922231320
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,7 +422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191307922231320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,7 +501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191308033801436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -185,7 +580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191308054448219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -276,6 +671,13 @@ Transform:
   - {fileID: 7829191309868771214}
   - {fileID: 7829191308264182396}
   - {fileID: 7829191307922231327}
+  - {fileID: 2530735111520172602}
+  - {fileID: 3850299222676772600}
+  - {fileID: 7385897697666870479}
+  - {fileID: 4411847754764734088}
+  - {fileID: 6884096011387797776}
+  - {fileID: 128013752196706551}
+  - {fileID: 9177702498068112526}
   - {fileID: 7829191309342813184}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -355,7 +757,7 @@ MonoBehaviour:
   - {fileID: 7829191307922231327}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.2
+  DistanceAction: 0.14
   AllVariantsActionsBase:
   - name: _ Cometa13
     ParentObjFunc: SetParentObject
@@ -364,10 +766,10 @@ MonoBehaviour:
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Moon4
     ParentObjFunc: SetParentObject
@@ -376,10 +778,10 @@ MonoBehaviour:
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Solar3
     ParentObjFunc: SetParentObject
@@ -388,10 +790,10 @@ MonoBehaviour:
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Saturn10
     ParentObjFunc: SetParentObject
@@ -400,10 +802,10 @@ MonoBehaviour:
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Uran9
     ParentObjFunc: SetParentObject
@@ -412,10 +814,10 @@ MonoBehaviour:
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _Jupiyer8
     ParentObjFunc: SetParentObject
@@ -424,10 +826,10 @@ MonoBehaviour:
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Mars7
     ParentObjFunc: SetParentObject
@@ -436,58 +838,82 @@ MonoBehaviour:
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Venus6
     ParentObjFunc: SetParentObject
     delayA: 0.1
-    AnimIndexID: 6
+    AnimIndexID: 8
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Merkury5
     ParentObjFunc: SetParentObject
     delayA: 0.1
-    AnimIndexID: 5
+    AnimIndexID: 9
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Neptune2
     ParentObjFunc: SetParentObject
     delayA: 0.1
-    AnimIndexID: 4
+    AnimIndexID: 10
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
   - name: _ Earth1
     ParentObjFunc: SetParentObject
     delayA: 0.1
-    AnimIndexID: 3
+    AnimIndexID: 11
     AnimPlayFunc: PlayAnimator
     delayB: 0.01
     BaseFunc: NullFunc
-    "delay\u0421": 0
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 0.01
-    FuncOtdalF_B: NullFunc
+    FuncOtdalF_B: ReturnPlanetParent
+    delayF: 0.01
+  - name: _ Solar3
+    ParentObjFunc: SetParentObject
+    delayA: 0.1
+    AnimIndexID: 12
+    AnimPlayFunc: PlayAnimator
+    delayB: 0.01
+    BaseFunc: NullFunc
+    "delay\u0421": 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.01
+    FuncOtdalF_B: ReturnPlanetParent
+    delayF: 0.01
+  - name: _ SuperNova15
+    ParentObjFunc: SetParentObject
+    delayA: 0.1
+    AnimIndexID: 13
+    AnimPlayFunc: PlayAnimator
+    delayB: 0.01
+    BaseFunc: NullFunc
+    "delay\u0421": 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.01
+    FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.01
 --- !u!1 &7829191308264182397
 GameObject:
@@ -516,7 +942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191308264182397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -595,7 +1021,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191308488918512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -674,7 +1100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191308992665403}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -757,7 +1183,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7829191308164896480}
-  m_RootOrder: 8
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7829191309342813190
 MeshFilter:
@@ -836,7 +1262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191309868771215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -915,7 +1341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829191309902812080}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -957,6 +1383,7 @@ MonoBehaviour:
   PrefabGameobjectName: wormhole3_export
   AssetDatBaseVersion: A
   isReservPref: 0
+  debtxtG: {fileID: 0}
   ObjectsNames: []
   ObjectsGam: []
   LoaderUI: {fileID: 0}
@@ -975,3 +1402,161 @@ MonoBehaviour:
   newBandleLoader: {fileID: 0}
   ObjectsGameobj: {fileID: 0}
   name: wormhole3_export
+--- !u!1 &8748586251731089914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2530735111520172602}
+  - component: {fileID: 6835321576321487114}
+  - component: {fileID: 7363318295542473071}
+  - component: {fileID: 3183229044062122429}
+  m_Layer: 0
+  m_Name: BlackHolrVoronkaAnim (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2530735111520172602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748586251731089914}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7829191308164896480}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6835321576321487114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748586251731089914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537335aed57c5504683a214bd7b1b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatR: {fileID: 0}
+--- !u!95 &7363318295542473071
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748586251731089914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d229f46aa10a44f9da95cbf0abfb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3183229044062122429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748586251731089914}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14cd4132bfdd654b9c1d711e81f7b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &9007287880982423909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7385897697666870479}
+  - component: {fileID: 1672020513748192782}
+  - component: {fileID: 8219140592302072587}
+  - component: {fileID: 6162156805108253879}
+  m_Layer: 0
+  m_Name: BlackHolrVoronkaAnim (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7385897697666870479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007287880982423909}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7829191308164896480}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1672020513748192782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007287880982423909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537335aed57c5504683a214bd7b1b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimatR: {fileID: 0}
+--- !u!95 &8219140592302072587
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007287880982423909}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d229f46aa10a44f9da95cbf0abfb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6162156805108253879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007287880982423909}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14cd4132bfdd654b9c1d711e81f7b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
