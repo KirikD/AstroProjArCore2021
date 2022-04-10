@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 6273354639269516352}
   - component: {fileID: 4669946318248741608}
   - component: {fileID: 4669946318248741611}
+  - component: {fileID: 8894408960974136231}
   m_Layer: 0
   m_Name: Cyclone2
   m_TagString: Untagged
@@ -207,6 +208,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalOneSet: 1
+--- !u!114 &8894408960974136231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480760619245958549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: -111
+  speedZ: 0
 --- !u!1001 &4669946318527312572
 PrefabInstance:
   m_ObjectHideFlags: 0

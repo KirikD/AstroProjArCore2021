@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4125626832359782420}
+  - component: {fileID: 6225386371971801105}
   m_Layer: 0
   m_Name: Empty.001
   m_TagString: Untagged
@@ -32,6 +33,21 @@ Transform:
   m_Father: {fileID: 3214461189114662711}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6225386371971801105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551257875300646567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: -120
+  speedZ: 0
 --- !u!1 &1716688173638852000
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +59,7 @@ GameObject:
   - component: {fileID: 5502381648657773385}
   - component: {fileID: 3352764877277276949}
   - component: {fileID: 3051700088818510407}
+  - component: {fileID: 8717665777581952542}
   m_Layer: 0
   m_Name: Tornado
   m_TagString: Untagged
@@ -57,13 +74,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716688173638852000}
-  m_LocalRotation: {x: -0.66580516, y: -0.23812523, z: -0.23812525, w: 0.665805}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0254, y: 0.0254, z: 0.0254}
+  m_LocalRotation: {x: -0.99842495, y: 0.056104276, z: 0.000000089406974, w: -0.000000111758716}
+  m_LocalPosition: {x: 0, y: 0, z: 0.118751265}
+  m_LocalScale: {x: 0.06283921, y: 0.0628392, z: 0.06283921}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3214461189114662711}
-  m_RootOrder: 4
+  m_Father: {fileID: 3104869201116455061}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3352764877277276949
 MeshFilter:
@@ -115,6 +132,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8717665777581952542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716688173638852000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 144
+  speedZ: 0
 --- !u!1 &2135122479593127225
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146538071048152152}
+  - component: {fileID: 680375768246368383}
   m_Layer: 0
   m_Name: Empty.003
   m_TagString: Untagged
@@ -147,6 +180,21 @@ Transform:
   m_Father: {fileID: 3214461189114662711}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &680375768246368383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135122479593127225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 188
+  speedZ: 0
 --- !u!1 &2781890402446442824
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +311,6 @@ Transform:
   - {fileID: 4125626832359782420}
   - {fileID: 1148118451033335324}
   - {fileID: 1146538071048152152}
-  - {fileID: 5502381648657773385}
   - {fileID: 3104869201116455061}
   - {fileID: 3104869202362138012}
   m_Father: {fileID: 0}
@@ -374,6 +421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5012048058864555678}
+  - component: {fileID: 2984274717314543457}
   m_Layer: 0
   m_Name: Empty
   m_TagString: Untagged
@@ -397,6 +445,21 @@ Transform:
   m_Father: {fileID: 3214461189114662711}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2984274717314543457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5871011430879748120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 70
+  speedZ: 0
 --- !u!1 &7189356506261252614
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1148118451033335324}
+  - component: {fileID: 94218637299487094}
   m_Layer: 0
   m_Name: Empty.002
   m_TagString: Untagged
@@ -512,6 +576,21 @@ Transform:
   m_Father: {fileID: 3214461189114662711}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &94218637299487094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8630989802135488690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 155
+  speedZ: 0
 --- !u!1 &9063811047733977653
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,13 +681,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3214461189114662711}
     m_Modifications:
+    - target: {fileID: 100000, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: m_Name
       value: SmokeStomp01
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: m_LocalScale.x
@@ -679,6 +762,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: UVModule.tilesX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: UVModule.tilesY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: InitialModule.startRotationX.minMaxState
       value: 3
       objectReference: {fileID: 0}
@@ -700,6 +791,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3104869201116854807}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2835689639477770343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3104869201116888245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 33
+  speedZ: 0
 --- !u!114 &3104869202822125879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,8 +820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/LightDust01
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -739,8 +845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/LightDust01
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
@@ -757,19 +863,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6851755
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6851755
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6851755
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -812,7 +918,35 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
+      propertyPath: UVModule.tilesX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
+      propertyPath: UVModule.tilesY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: ShapeModule.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
+      propertyPath: ForceModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
+      propertyPath: ForceModule.y.scalar
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
+      propertyPath: ForceModule.y.minScalar
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
@@ -899,8 +1033,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
-  ColorN: _TintColor
+  TexPath: Textures/LightDust01
+  ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
   texture: {fileID: 0}
+--- !u!114 &6123775733562203114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3104869202362622396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedY: 5
+  speedZ: 0

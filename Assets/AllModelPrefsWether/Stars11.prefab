@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4791566070356969074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.989, z: 0.242}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0.242}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -635,7 +635,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 3, y: 3, z: 3}
+    m_Scale: {x: 3, y: 2, z: 3}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -4744,7 +4744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/SoftSnowTEX
+  TexPath: W/starG
   ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []

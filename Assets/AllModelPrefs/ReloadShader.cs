@@ -9,6 +9,7 @@ public class ReloadShader : MonoBehaviour
     public string ColorN;  public Color ColorV;
     public string[] ShadNames;
     public Texture texture;
+
     void Start()
     {
         Material material = new Material(Shader.Find(ShaderName));
@@ -28,6 +29,7 @@ public class ReloadShader : MonoBehaviour
         material.SetTexture(TexName, texture);
         GetComponent<Renderer>().material.SetTexture(TexName, texture);
         GetComponent<Renderer>().material.SetColor(ColorN, ColorV);
+
     }
 
 
