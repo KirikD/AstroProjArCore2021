@@ -88,8 +88,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
         {
             m_TrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
         }
-    
-         void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+
+        void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
          {
              foreach (var trackedImage in eventArgs.added)
              {
