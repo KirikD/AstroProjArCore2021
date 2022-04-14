@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2525424535268878299}
   - component: {fileID: 2525424535268878296}
   - component: {fileID: 2525424535268878297}
+  - component: {fileID: 7949098685082926516}
   m_Layer: 0
   m_Name: VolcanoContainer5
   m_TagString: Untagged
@@ -29,6 +30,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2525424536864120440}
   m_RootOrder: 0
@@ -87,6 +89,19 @@ MonoBehaviour:
   newBandleLoader: {fileID: 0}
   ObjectsGameobj: {fileID: 0}
   name: Volcano5
+--- !u!114 &7949098685082926516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2525424535268878311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a92b286252750c45be153b7ceb4ed98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Instt: {fileID: 7442368182069511410, guid: fa5ad5d74d83b5347beb6f6f12b64e40, type: 3}
 --- !u!1 &2525424535375131918
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +130,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2525424536864120440}
   m_RootOrder: 1
@@ -138,6 +154,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -197,6 +214,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2525424535268878310}
   - {fileID: 2525424535375131905}
@@ -214,6 +232,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -286,7 +305,7 @@ MonoBehaviour:
     AnimPlayFunc: NullFunc
     delayB: 0.01
     BaseFunc: NullFunc
-    delayC: 0.01
+    "delay\u0421": 0.01
     FuncOtdalF_A: NullFunc
     delayE: 2
     FuncOtdalF_B: GrozaInCiclonFunctionOff

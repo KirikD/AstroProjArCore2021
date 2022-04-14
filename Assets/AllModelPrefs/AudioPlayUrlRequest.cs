@@ -36,14 +36,15 @@ public class AudioPlayUrlRequest : MonoBehaviour
             source = clip;
 
             audS.clip = source;
+            audS.Play();
         }
     }
-    void Update()
+    /*void Update()
     {
         if (!audS.isPlaying && audS.clip.isReadyToPlay)
         {
            // audS.clip = source;
             audS.Play();
         }
-    }
+    }*/
 }

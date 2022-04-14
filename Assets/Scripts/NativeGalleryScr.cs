@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NativeGalleryScr : MonoBehaviour
 {
+	//public GameObject[] ToSet;
 	void Update()
 	{
 		/*if (Input.GetMouseButtonDown(0))

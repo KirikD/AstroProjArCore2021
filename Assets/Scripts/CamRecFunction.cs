@@ -10,7 +10,7 @@ public class CamRecFunction : MonoBehaviour
     void Start()
     {
         rkd.Initialise();
-        Screen.orientation = ScreenOrientation.Portrait;
+        //Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
    // public ReplayKitDemo rkd;
     public UIController uIController;

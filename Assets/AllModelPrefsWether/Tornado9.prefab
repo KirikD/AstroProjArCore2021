@@ -304,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 2871009334132069773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.59341, y: 0.59341, z: 0.59341}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5012048058864555678}
@@ -770,6 +770,42 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: VelocityModule.x.scalar
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: VelocityModule.y.scalar
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: VelocityModule.z.scalar
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: VelocityModule.x.minScalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: VelocityModule.y.minScalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: InitialModule.startRotationX.minMaxState
       value: 3
       objectReference: {fileID: 0}
@@ -820,7 +856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/LightDust01
+  TexPath: Textures/Smoke
   ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
@@ -1033,7 +1069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderName: Legacy Shaders/Particles/Additive (Soft)
   TexName: _MainTex
-  TexPath: Textures/LightDust01
+  TexPath: Textures/Smoke
   ColorN: _Color
   ColorV: {r: 1, g: 1, b: 1, a: 1}
   ShadNames: []
