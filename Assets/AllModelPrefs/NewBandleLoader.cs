@@ -14,7 +14,7 @@ public class NewBandleLoader : MonoBehaviour
     public string BundleLocalLoadPath = "?? ????? ?????????! ???? ?????????? ????!";
     public string PrefabGameobjectName = "asteroids";
     // ?????? ???? ?????? ?????? ????? ??????
-    public string AssetDatBaseVersion = "B";
+    public string AssetDatBaseVersion = "L";
     public bool isReservPref = false;
 
     public Text debtxtG;
@@ -27,7 +27,7 @@ public class NewBandleLoader : MonoBehaviour
 
         if (isReservPref == false)
         {
-            AssetDatBaseVersion = "B";
+            AssetDatBaseVersion = "L";
             // ????????? ??? ????? ?? ???? ??????
             Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 10.0f));
 
@@ -36,7 +36,7 @@ public class NewBandleLoader : MonoBehaviour
         }
         if (isReservPref)
         {
-            AssetDatBaseVersion = "B";
+            AssetDatBaseVersion = "L";
             Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.9f, 2.0f));// ????????? ??? ????? ?? ???? ??????
 
             //var myLoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "cosmos"));
@@ -64,10 +64,10 @@ public class NewBandleLoader : MonoBehaviour
     void LoadAssetBundleFromURL()
     {
         // ????????? ??????
-        if (PlayerPrefs.GetInt(BundleFileName + AssetDatBaseVersion) != 13)
+        if (PlayerPrefs.GetInt(BundleFileName + AssetDatBaseVersion) != 21)
         {
             Debug.Log("OnceAlltime");
-            PlayerPrefs.SetInt(BundleFileName + AssetDatBaseVersion, 13);
+            PlayerPrefs.SetInt(BundleFileName + AssetDatBaseVersion, 21);
             StartCoroutine(downloadAsset(UrlBundleDawnload));
         }
     }

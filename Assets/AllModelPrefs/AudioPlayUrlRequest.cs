@@ -45,6 +45,6 @@ public class AudioPlayUrlRequest : MonoBehaviour
     }
     public void StopAudd()
     {
-        audS.Play();
+        audS.Stop();
     }
 }

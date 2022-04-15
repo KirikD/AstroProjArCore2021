@@ -1,0 +1,129 @@
+ManifestFileVersion: 0
+CRC: 1479640593
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dc41f6578cd8738c449e7915ad795a5e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a6a9be5f327cee3555c95dadfc61b7a2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0bb9d27521c717a46a1696a25c997768, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 61876549b1ae256499f1c6a665335f5a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f691cfa8870978940911a79167b1ba46, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2eba402144affce48bb8d49c652bb5a1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cb1fcdfcfba9e534695cae5632854c20, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4b43056bfce98f54eb0f9275569f7568, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dfb7ac447941d164d9b6ac69ce109e65, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a511954f135d52c4181893be221d616b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0700f0cddb87c7f4789357d13232985a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6982c8603084aa94f88c8872c668fa01, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e4656b1c1bceced4d980368a487919f0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a7d0232d8e1a93242a271b81db99b8af, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f9301730cc4eaa743b2a71bf43e51bbd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ed0ed7f5c6840b44ebad078198996663, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0729395e6edd7cd40a29af56922940e7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6f8b8ee00238ecc4d9522559bf98151b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a7cb4278b4f0b1a49b2475f3638c65a2, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AllModelPrefs/Mercury_1K.prefab
+- Assets/AllModelPrefs/Venus_1K.prefab
+- Assets/AllModelPrefs/Black hole p1_Complete2.prefab
+- Assets/AllModelPrefs/Saturn.prefab
+- Assets/AllModelPrefsWether/Volcano5.prefab
+- Assets/AllModelPrefs/moon_export2.prefab
+- Assets/AllModelPrefsWether/Snezinka7.prefab
+- Assets/AllModelPrefsWether/Stars11.prefab
+- Assets/AllModelPrefs/Neptune.prefab
+- Assets/AllModelPrefs/galaxy.prefab
+- Assets/AllModelPrefsWether/SevernoeSianie12.prefab
+- Assets/AllModelPrefsWether/Rain15.prefab
+- Assets/AllModelPrefs/moon_export.prefab
+- Assets/AllModelPrefsWether/Listopad10.prefab
+- Assets/AllModelPrefsWether/Ice8.prefab
+- Assets/AllModelPrefsWether/Sun14.prefab
+- Assets/AllModelPrefs/SolarSystemContainer.prefab
+- Assets/AllModelPrefs/jupiter.prefab
+- Assets/AllModelPrefs/asteroids.prefab
+- Assets/AllModelPrefsWether/Tsunami4.prefab
+- Assets/AllModelPrefs/Uranus.prefab
+- Assets/AllModelPrefs/Marc_export.prefab
+- Assets/AllModelPrefs/wormhole3_export.prefab
+- Assets/AllModelPrefsWether/Cyclone2.prefab
+- Assets/AllModelPrefsWether/Raduga13.prefab
+- Assets/AllModelPrefs/Earth.prefab
+- Assets/AllModelPrefsWether/SoftSnowShuriken6.prefab
+- Assets/AllModelPrefs/Sun.prefab
+- Assets/AllModelPrefsWether/Tornado9.prefab
+- Assets/AllModelPrefsWether/Cloud3.prefab
+- Assets/AllModelPrefsWether/Groza1.prefab
+Dependencies: []
