@@ -10,7 +10,7 @@ public class CamRecFunction : MonoBehaviour
     void Start()
     {
         rkd.Initialise();
-        //Screen.orientation = ScreenOrientation.LandscapeLeft;
+        Invoke("PrepareStartRec", 11);
     }
    // public ReplayKitDemo rkd;
     public UIController uIController;
@@ -47,4 +47,12 @@ public class CamRecFunction : MonoBehaviour
     }
     void SaveFileVideo() { rkd.SavePreview(); }
     void PrevRec() { rkd.Preview(); string filePath = ReplayKitManager.GetPreviewFilePath(); }
+
+    void PrepareStartRec()
+    {
+        rkd.PrepareRecording();
+        ReplayKitManager.SetMicrophoneStatus(true);
+        //rkd.StartRecording();
+    }
+
 }

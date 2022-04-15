@@ -59,6 +59,7 @@ public class AnimationByButton : MonoBehaviour
                         isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
                         PlayStopAnimation(true);
                         Debug.Log("AA You selected the " + hit.transform.name); // ensure you picked right object
+                        GetComponent<AudioPlayUrlRequest>().PlayAudd();
                     }
                 }
                 else
@@ -68,6 +69,7 @@ public class AnimationByButton : MonoBehaviour
                         isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
                         PlayStopAnimation(false);
                         Debug.Log("BB You selected the " + hit.transform.name); // ensure you picked right object
+                        GetComponent<AudioPlayUrlRequest>().StopAudd();
                     }
                 }
 

@@ -457,7 +457,7 @@ MonoBehaviour:
     delayE: 0.01
     FuncOtdalF_B: ReturnPlanetParent
     delayF: 0.2
-  - name: _ Uran9
+  - name: _ Uran9__
     ParentObjFunc: SetParentObject
     delayA: 0.1
     AnimIndexID: 3

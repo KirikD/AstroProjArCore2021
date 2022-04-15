@@ -36,15 +36,15 @@ public class AudioPlayUrlRequest : MonoBehaviour
             source = clip;
 
             audS.clip = source;
-            audS.Play();
+            audS.Stop();
         }
     }
-    /*void Update()
+    public void PlayAudd()
     {
-        if (!audS.isPlaying && audS.clip.isReadyToPlay)
-        {
-           // audS.clip = source;
-            audS.Play();
-        }
-    }*/
+        audS.Play();
+    }
+    public void StopAudd()
+    {
+        audS.Play();
+    }
 }
