@@ -45,11 +45,16 @@ public class AnimationByButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
+            LayerMask lm = 1 << 10;
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 100.0f))
+            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+                if (Physics.Raycast(ray, out hit, 100.0f, lm))
             {
                 IsActive = !IsActive;               //if inventory is already True it will set it to false And the other way around.
                 if (IsActive == true)
