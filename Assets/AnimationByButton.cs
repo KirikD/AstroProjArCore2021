@@ -43,44 +43,79 @@ public class AnimationByButton : MonoBehaviour
     }
     public bool IsActive = false; bool isWaitAnim = true;
     // Update is called once per frame
-    void Update()
+    /* void Update()
+     {
+
+             LayerMask lm = 1 << 10;
+             RaycastHit hit;
+             //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+           /*  Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+             if (Input.GetTouch(0).phase == TouchPhase.Began)
+                 if (Physics.Raycast(ray, out hit, 100.0f, lm))
+             {
+                 IsActive = !IsActive;               //if inventory is already True it will set it to false And the other way around.
+                 if (IsActive == true)
+                 {
+                     if (isWaitAnim)
+                     {
+                         isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
+                         PlayStopAnimation(true);
+                         Debug.Log("AA You selected the " + hit.transform.name); // ensure you picked right object
+                         GetComponent<AudioPlayUrlRequest>().PlayAudd();
+                     }
+                 }
+                 else
+                 {
+                     if (isWaitAnim)
+                     {
+                         isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
+                         PlayStopAnimation(false);
+                         Debug.Log("BB You selected the " + hit.transform.name); // ensure you picked right object
+                         GetComponent<AudioPlayUrlRequest>().StopAudd();
+                     }
+                 }
+
+             }
+     }*/
+   
+   /* void Update()
     {
-
-        if (Input.GetMouseButtonDown(0))
+        RaycastHit hit = new RaycastHit();
+        for (int i = 0; i < Input.touchCount; ++i)
         {
-            LayerMask lm = 1 << 10;
-            RaycastHit hit;
-            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            if (Input.GetTouch(0).phase == TouchPhase.Began)
-                if (Physics.Raycast(ray, out hit, 100.0f, lm))
+            if (Input.GetTouch(i).phase.Equals(TouchPhase.Began))
             {
-                IsActive = !IsActive;               //if inventory is already True it will set it to false And the other way around.
-                if (IsActive == true)
-                {
-                    if (isWaitAnim)
+                // Construct a ray from the current touch coordinates
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                if (Physics.Raycast(ray, out hit))
+                {   //hit.transform.gameObject.SendMessage("OnMouseDown");
+                    IsActive = !IsActive;               //if inventory is already True it will set it to false And the other way around.
+                    if (IsActive == true)
                     {
-                        isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
-                        PlayStopAnimation(true);
-                        Debug.Log("AA You selected the " + hit.transform.name); // ensure you picked right object
-                        GetComponent<AudioPlayUrlRequest>().PlayAudd();
+                        if (isWaitAnim)
+                        {
+                            isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
+                            PlayStopAnimation(true);
+                            Debug.Log("AA You selected the " + hit.transform.name); // ensure you picked right object
+                            GetComponent<AudioPlayUrlRequest>().PlayAudd();
+                        }
                     }
-                }
-                else
-                {
-                    if (isWaitAnim)
+                    else
                     {
-                        isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
-                        PlayStopAnimation(false);
-                        Debug.Log("BB You selected the " + hit.transform.name); // ensure you picked right object
-                        GetComponent<AudioPlayUrlRequest>().StopAudd();
+                        if (isWaitAnim)
+                        {
+                            isWaitAnim = false; Invoke(nameof(WaitAnim), 3);
+                            PlayStopAnimation(false);
+                            Debug.Log("BB You selected the " + hit.transform.name); // ensure you picked right object
+                            GetComponent<AudioPlayUrlRequest>().StopAudd();
+                        }
                     }
+                    //////////////
                 }
-
             }
         }
-    }
+    }*/
     void WaitAnim()
     {
         isWaitAnim = true;

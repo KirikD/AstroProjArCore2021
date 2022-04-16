@@ -112,6 +112,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
                        
                         trackedImage.transform.GetChild(0).localPosition = new Vector3(0, 0, 0);
                         StopAllCoroutines(); ///
+
+                        ggSound = trackedImage.transform.GetChild(0).gameObject; Invoke("PlaySound",1);// играем звук при наведении
                     }
                     else if (trackedImage.trackingState == TrackingState.None)
                     {
@@ -137,6 +139,10 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 Debug.Log("Exception : " + e.Message);
             }
         }
+        GameObject ggSound;
+        void PlaySound()
+        { ggSound.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<AudioPlayUrlRequest>().PlaySound(); }
+
         public Text DebTxtxA, DebTxtxB, DebTxtxC;
         public Transform gamOutModel;
         //  void OutModel()   {  gamOutModel.localPosition = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));     }

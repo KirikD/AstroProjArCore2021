@@ -10,6 +10,8 @@ public class AudioPlayUrlRequest : MonoBehaviour
     {
         audS = GetComponent<AudioSource>();
         StartCoroutine(LoadAudioURL(urlStr));
+
+        onlyOnceClipPlay = GameObject.Find("Canvas").GetComponent<OnlyOnceClipPlay>();
     }
     public AudioClip source;
     AudioSource audS;
@@ -24,7 +26,7 @@ public class AudioPlayUrlRequest : MonoBehaviour
         }
         else
         {
-            // Or retrieve results as binary data
+            // Or retrieve results as binary data 
             byte[] results = www.downloadHandler.data;
             var memStream = new System.IO.MemoryStream(results);
             var mpgFile = new NLayer.MpegFile(memStream);
@@ -35,10 +37,29 @@ public class AudioPlayUrlRequest : MonoBehaviour
             clip.SetData(samples, 0);
             source = clip;
 
-            audS.clip = source;
+            audS.clip = source; //audS.Play();
+
             audS.Stop();
+            onlyOnceClipPlay.OcupporedTimeFl = clip.length/7.994f;
+            if (onlyOnceClipPlay.isOcupporedOtherAudio == false)
+            {
+                audS.Play();
+                onlyOnceClipPlay.OcupporedOtherAudio();
+            }
+           
+
         }
     }
+    public void PlaySound()
+    {
+        onlyOnceClipPlay.OcupporedTimeFl = audS.clip.length / 7.994f;
+        if (onlyOnceClipPlay.isOcupporedOtherAudio == false)
+        {
+            audS.Play();
+            onlyOnceClipPlay.OcupporedOtherAudio();
+        }
+    }
+    public  OnlyOnceClipPlay onlyOnceClipPlay;
     public void PlayAudd()
     {
         audS.Play();
