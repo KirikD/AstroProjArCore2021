@@ -5228,7 +5228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -175, y: 70.982666}
+  m_AnchoredPosition: {x: -175, y: 70.98242}
   m_SizeDelta: {x: 125.7772, y: 141.3777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &802654891
@@ -6721,7 +6721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 247, y: 70.982666}
+  m_AnchoredPosition: {x: 247, y: 70.98242}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1254422914
@@ -11538,7 +11538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -300.5072, y: 70.982666}
+  m_AnchoredPosition: {x: -300.5072, y: 70.98242}
   m_SizeDelta: {x: 125.7772, y: 141.3777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000770744
@@ -12272,7 +12272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2102690497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12289,6 +12289,7 @@ MonoBehaviour:
   recordIco: {fileID: 1100663080}
   stopIco: {fileID: 870906126}
   IsActive: 0
+  timeAdd: 0
 --- !u!114 &2102690498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12332,19 +12333,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2102690499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2102690497}
-        m_TargetAssemblyTypeName: ButtonStartAnim, Assembly-CSharp
-        m_MethodName: AnimPlay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2102690499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12400,10 +12389,10 @@ RectTransform:
   m_Father: {fileID: 1297701677}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.03466667, y: 0.25183335}
-  m_AnchorMax: {x: 0.9696111, y: 0.78400004}
-  m_AnchoredPosition: {x: -5.833008, y: -0.96502686}
-  m_SizeDelta: {x: 1.3759999, y: -1.9290009}
+  m_AnchorMin: {x: 0.028703708, y: 0.09316217}
+  m_AnchorMax: {x: 0.97085184, y: 0.87784684}
+  m_AnchoredPosition: {x: -2.1992188, y: 0}
+  m_SizeDelta: {x: 1.4202, y: -0.00024414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1268160567467565786
 CanvasRenderer:

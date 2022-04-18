@@ -1,8 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class ButtonStartAnim : MonoBehaviour
+using UnityEngine.EventSystems;
+using System.Collections;
+using System.Linq;
+
+public class ButtonStartAnim : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public GameObject[] allMarkers;
     void Start()
@@ -16,54 +18,94 @@ public class ButtonStartAnim : MonoBehaviour
 
     }
     public GameObject recordIco, stopIco;
-    public bool IsActive = false;  bool isWaitAnim = true;
+    public bool IsActive = true;  bool isWaitAnim = true;
     public void AnimPlay()
     {
+     
         allMarkers = GameObject.FindGameObjectsWithTag("MarkerTarg");
-        IsActive = !IsActive;               //if inventory is already True it will set it to false And the other way around.
-                                            //all with the same key press that can be changed in the inspector. AnimationByButton
-
+               //if inventory is already True it will set it to false And the other way around.
+                                          //all with the same key press that can be changed in the inspector. AnimationByButton
+       
         //-----------------------------------------------
-        if (IsActive == true )
+        if (animOnce)
         {
-            if (isWaitAnim)
+           
+            if (IsActive == true)
             {
-                isWaitAnim = false; Invoke(nameof(ButtonStartAnim.WaitAnim), 3);
-                recordIco.SetActive(false);    //if the boolean is true
-                stopIco.SetActive(true);
-                for (int i = 0; i < allMarkers.Length; i++)
+                if (isWaitAnim)
                 {
+                    isWaitAnim = false; Invoke(nameof(ButtonStartAnim.WaitAnim), 3);
+                    recordIco.SetActive(false);    //if the boolean is true
+                    stopIco.SetActive(true);
+                    for (int i = 0; i < allMarkers.Length; i++)
+                    {
 
-                    try
-                    {
-                        allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(true);
+                        try
+                        {
+                            allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(true);
+                        }
+                        catch { }
                     }
-                    catch { }
                 }
             }
-        }
-        else
-        {
-            if (isWaitAnim)
+            else
             {
-                isWaitAnim = false; Invoke(nameof(ButtonStartAnim.WaitAnim),3);
-                recordIco.SetActive(true);    //if the boolean is true
-                stopIco.SetActive(false);
-                for (int i = 0; i < allMarkers.Length; i++)
+                if (isWaitAnim)
                 {
-                    try
+                    isWaitAnim = false; Invoke(nameof(ButtonStartAnim.WaitAnim), 3);
+                    recordIco.SetActive(true);    //if the boolean is true
+                    stopIco.SetActive(false);
+                    for (int i = 0; i < allMarkers.Length; i++)
                     {
-                        allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(false);
+                        try
+                        {
+                            allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(false);
+                        }
+                        catch { }
                     }
-                    catch { }
                 }
             }
+            this.gameObject.GetComponent<Image>().enabled = false;
         }
-        this.gameObject.GetComponent<Image>().enabled = false;
+    }
+    bool timeFix;
+    public void OnPointerDown(PointerEventData eventData)
+    {
+      
+        Debug.Log("Pointer Test: Point Down");
+        timeFix = true;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        animOnce = true;
+        Debug.Log("Pointer Test: Point Up"); 
+        timeFix = false;
+        Invoke("WaitRes", 1.5f);
+    }
+    public float timeAdd; bool animOnce = false;
+    void FixedUpdate()
+    {
+        if (timeAdd > 0.13f) animOnce = false;
+        if (timeAdd > 0.02f && timeAdd < 0.13f)
+        {  AnimPlay();  }
+
+
+
+        if (timeFix)
+        { timeAdd += Time.deltaTime; }
+
+
+
+    }
+    void WaitRes()
+    {
+        timeAdd = 0;
     }
     void WaitAnim() 
     {
-        isWaitAnim = true;
+        isWaitAnim = true; 
+        IsActive = !IsActive;
     }
     public void ReloadThisLevelBtt()
     {

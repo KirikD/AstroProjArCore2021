@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5086745710144744885}
   m_LocalRotation: {x: -0.0000000331651, y: 0.6493716, z: 0.000000026008351, w: 0.7604713}
-  m_LocalPosition: {x: -0.023, y: 0.689, z: -0.369}
-  m_LocalScale: {x: 0.8511352, y: 0.8809606, z: 0.69139504}
+  m_LocalPosition: {x: -0.085, y: 0.768, z: -0.357}
+  m_LocalScale: {x: 0.64801174, y: 0.6707193, z: 0.5263936}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8656345561440463269}
@@ -855,7 +855,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 1, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0.2, y: 0.3, z: 0.59}
+    m_Scale: {x: 0.2, y: 0.2, z: 0.5}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -5092,6 +5092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   urlStr: "http://kirikd.ru/AstroProject/WetherAudio/\u015Anieg 1(pogoda).mp3"
   source: {fileID: 0}
+  onlyOnceClipPlay: {fileID: 0}
 --- !u!1001 &584064557127034505
 PrefabInstance:
   m_ObjectHideFlags: 0

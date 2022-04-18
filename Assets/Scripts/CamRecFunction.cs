@@ -10,7 +10,7 @@ public class CamRecFunction : MonoBehaviour
     void Start()
     {
         rkd.Initialise();
-        Invoke("PrepareStartRec", 11);
+        Invoke("PrepareStartRec", 1);
     }
    // public ReplayKitDemo rkd;
     public UIController uIController;

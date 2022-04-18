@@ -4873,5 +4873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0729395e6edd7cd40a29af56922940e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  urlStr: http://kirikd.ru/AstroProject/WetherAudio/Gwiazdy 1(pogoda).mp3e 1(pogoda).mp3
+  urlStr: http://kirikd.ru/AstroProject/WetherAudio/Gwiazdy%201(pogoda).mp3
   source: {fileID: 0}
+  onlyOnceClipPlay: {fileID: 0}

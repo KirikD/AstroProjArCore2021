@@ -52,7 +52,7 @@ public class AudioPlayUrlRequest : MonoBehaviour
     }
     public void PlaySound()
     {
-        onlyOnceClipPlay.OcupporedTimeFl = audS.clip.length / 7.994f;
+        onlyOnceClipPlay.OcupporedTimeFl = audS.clip.length / 7.5f;
         if (onlyOnceClipPlay.isOcupporedOtherAudio == false)
         {
             audS.Play();
