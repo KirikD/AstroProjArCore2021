@@ -26,13 +26,14 @@ public class CamRecFunction : MonoBehaviour
         //-----------------------------------------------
         if (IsActive == true)
         {
+            playAllAudio();
             recordIco.SetActive(false);    //if the boolean is true
             stopIco.SetActive(true);
 
             rkd.PrepareRecording();
             ReplayKitManager.SetMicrophoneStatus(true);
             rkd.StartRecording();
-
+           
            // uIController.OnClickStartRecord(); 
         }                                       //You can add her also more things like stopping the time With (Time.timeScale = 0;)
         else                                  //and turn it back with(Time.timeScale = 1;)
@@ -47,7 +48,25 @@ public class CamRecFunction : MonoBehaviour
     }
     void SaveFileVideo() { rkd.SavePreview(); }
     void PrevRec() { rkd.Preview(); string filePath = ReplayKitManager.GetPreviewFilePath(); }
-
+    AudioSource[] sources; AudioPlayUrlRequest[] LoadSoundRe;
+    void playAllAudio() 
+    {
+     /*   sources = GameObject.FindSceneObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioSource in sources)
+        {
+            audioSource.Play();
+            audioSource.mute = false; audioSource.bypassEffects = false; audioSource.bypassListenerEffects = false;
+            audioSource.bypassReverbZones = false;
+        }*/
+        LoadSoundRe = GameObject.FindSceneObjectsOfType(typeof(AudioPlayUrlRequest)) as AudioPlayUrlRequest[];
+        foreach (AudioPlayUrlRequest audioRR in LoadSoundRe)
+        {
+            //Debug.Log("FDDGHHF " + audioRR.gameObject.name);
+          // Destroy( audioRR.gameObject.GetComponent<AudioSource>());
+            //audioRR.Invoke("ReloadAudio",0.5f);
+            audioRR.ReloadAudio();
+        }
+    }
     void PrepareStartRec()
     {
         rkd.PrepareRecording();

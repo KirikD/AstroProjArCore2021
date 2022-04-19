@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-[RequireComponent(typeof(AudioSource))]
+//[RequireComponent(typeof(AudioSource))]
 public class AudioPlayUrlRequest : MonoBehaviour
 {
     public string urlStr;
@@ -40,9 +40,10 @@ public class AudioPlayUrlRequest : MonoBehaviour
             audS.clip = source; //audS.Play();
 
             audS.Stop();
-            onlyOnceClipPlay.OcupporedTimeFl = clip.length/7.994f;
+            onlyOnceClipPlay.OcupporedTimeFl = clip.length/7.5f;
             if (onlyOnceClipPlay.isOcupporedOtherAudio == false)
             {
+                audS.time = curTime;
                 audS.Play();
                 onlyOnceClipPlay.OcupporedOtherAudio();
             }
@@ -55,6 +56,7 @@ public class AudioPlayUrlRequest : MonoBehaviour
         onlyOnceClipPlay.OcupporedTimeFl = audS.clip.length / 7.5f;
         if (onlyOnceClipPlay.isOcupporedOtherAudio == false)
         {
+            curTime = 0;
             audS.Play();
             onlyOnceClipPlay.OcupporedOtherAudio();
         }
@@ -68,4 +70,29 @@ public class AudioPlayUrlRequest : MonoBehaviour
     {
         audS.Stop();
     }
+    float curTime = 0;
+    public void ReloadAudio()
+    {
+        if (audS.isPlaying)
+        {
+            curTime = audS.time;
+            audS.clip = null; source = null;
+            Destroy(GetComponent<AudioSource>());
+
+           
+       }
+
+        Invoke("NowPlay",0.3f);
+    }
+    public void NowPlay()
+    {
+        this.gameObject.AddComponent<AudioSource>();
+        audS = GetComponent<AudioSource>();
+
+
+        onlyOnceClipPlay.isOcupporedOtherAudio = false;
+        StartCoroutine(LoadAudioURL(urlStr));
+
+    }
+
 }

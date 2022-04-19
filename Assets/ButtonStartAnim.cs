@@ -35,14 +35,13 @@ public class ButtonStartAnim : MonoBehaviour, IPointerDownHandler, IPointerUpHan
                 if (isWaitAnim)
                 {
                     isWaitAnim = false; Invoke(nameof(ButtonStartAnim.WaitAnim), 3);
-                    recordIco.SetActive(false);    //if the boolean is true
-                    stopIco.SetActive(true);
+                    recordIco.SetActive(true);    //if the boolean is true
+                    stopIco.SetActive(false);
                     for (int i = 0; i < allMarkers.Length; i++)
                     {
-
                         try
                         {
-                            allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(true);
+                            allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(false);
                         }
                         catch { }
                     }
@@ -53,13 +52,14 @@ public class ButtonStartAnim : MonoBehaviour, IPointerDownHandler, IPointerUpHan
                 if (isWaitAnim)
                 {
                     isWaitAnim = false; Invoke(nameof(ButtonStartAnim.WaitAnim), 3);
-                    recordIco.SetActive(true);    //if the boolean is true
-                    stopIco.SetActive(false);
+                    recordIco.SetActive(false);    //if the boolean is true
+                    stopIco.SetActive(true);
                     for (int i = 0; i < allMarkers.Length; i++)
                     {
+
                         try
                         {
-                            allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(false);
+                            allMarkers[i].transform.GetChild(0).GetChild(0).gameObject.GetComponent<AnimationByButton>().PlayStopAnimation(true);
                         }
                         catch { }
                     }
@@ -86,8 +86,8 @@ public class ButtonStartAnim : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     public float timeAdd; bool animOnce = false;
     void FixedUpdate()
     {
-        if (timeAdd > 0.13f) animOnce = false;
-        if (timeAdd > 0.02f && timeAdd < 0.13f)
+        if (timeAdd > 0.06f) animOnce = false;
+        if (timeAdd > 0.02f && timeAdd < 0.06f)
         {  AnimPlay();  }
 
 

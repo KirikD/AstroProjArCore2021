@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551257875300646567}
   m_LocalRotation: {x: -0.70699537, y: -0.01255515, z: 0.0125551475, w: 0.70699525}
-  m_LocalPosition: {x: -0, y: 2.022341, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 3.08046, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.5264}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9127422040218875124}
@@ -172,8 +172,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135122479593127225}
   m_LocalRotation: {x: -0.52585346, y: 0.08261957, z: -0.13139449, w: 0.836294}
-  m_LocalPosition: {x: 0.08661881, y: 0.6521721, z: -0.06501231}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.08661881, y: 0.989, z: -0.06501231}
+  m_LocalScale: {x: 1, y: 1, z: 1.5264}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8952064927490185032}
@@ -305,8 +305,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2871009334132069773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: -0.00028953, y: 0.010986, z: 0.00072266}
+  m_LocalScale: {x: 0.2933327, y: 0.2933327, z: 0.2933327}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5012048058864555678}
@@ -441,6 +441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   urlStr: http://kirikd.ru/AstroProject/WetherAudio/Tornado 1(pogoda).mp3
   source: {fileID: 0}
+  onlyOnceClipPlay: {fileID: 0}
 --- !u!1 &4777227370819002238
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,8 +550,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5871011430879748120}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 2.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 3.85536, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.5264}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1291532646822085539}
@@ -680,8 +681,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8630989802135488690}
   m_LocalRotation: {x: -0.7495858, y: -0.05136858, z: 0.05858028, w: 0.65730566}
-  m_LocalPosition: {x: -0.011033896, y: 1.5472407, z: -1.1585793e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.011033896, y: 2.35526, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.5264}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7114643003655165589}
@@ -815,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40420622
+      value: 0.6169804
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -823,7 +824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.048
+      value: 0.066789985
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70aefc1603a2baf46b42ddbc029ac0d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1087,7 +1088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: ForceModule.enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: ForceModule.y.scalar
@@ -1111,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: InitialModule.gravityModifier.scalar
-      value: -0.5
+      value: -0.025
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 467bf6c860336b944a99319b9ba3bf45, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.atime1
