@@ -9,13 +9,13 @@ public class DistanceEventMaster : MonoBehaviour
     public MeshRenderer IndicatorMeshTest;
     public Text[] DebugTXT;// public Text DebugUniqueTXT;
     // Start is called before the first frame update
-    [Header("точка обжект анимации к которой парентим дочерний обжект")]
+    [Header("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ")]
     public Transform[] AnimPoint; public int AnimIndex;
-    GameObject thisMainObj; // это главный обект этого маркера
+    GameObject thisMainObj; // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     void Start()
     {
         string value = this.gameObject.name.Substring(0, this.gameObject.name.Length - 7);
-        this.gameObject.name = value; // убрали дурацкую надпись клоне
+        this.gameObject.name = value; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
         thisMainObj = this.transform.GetChild(0).transform.gameObject;
 
@@ -31,19 +31,19 @@ public class DistanceEventMaster : MonoBehaviour
         rand = (int)UnityEngine.Random.Range(0, 19);
     }
     int rand;
-    public void MarkerListUpdated() // вызываем когда доп маркер появился в мире
+    public void MarkerListUpdated() // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
     {
       //  thisMainObj = this.transform.GetChild(0).transform.gameObject;
         allMarkers = GameObject.FindGameObjectsWithTag("MarkerTarg");
        // IndicatorMeshTest.enabled = false;
 
     }
-    // Массив со всеми маркерами
+    // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public GameObject[] allMarkers;
     int AdderCucle = 0;
     string oldName  =""; GameObject oldObjGeom; GameObject oldMarker;
 
-    [Header("Дистанция с которой начинаем взаимодействовать")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     public float DistanceAction = 3;
     void Update()
     {
@@ -56,20 +56,23 @@ public class DistanceEventMaster : MonoBehaviour
             AdderCucle += 1;
             float dist = Vector3.Distance(allMarkers[AdderCucle].transform.position, transform.position);
 
-            // Если приблизились выводим имя
+            // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
             if (dist < DistanceAction && allMarkers[AdderCucle].name != transform.gameObject.name )
             {
+                transform.GetChild(transform.childCount - 1).position = (allMarkers[AdderCucle].transform.position + transform.position) / 2;
 
-             
                 if (oldName.Length < 3)
-                {            // единыжды вызываем
+                {
+                    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                    transform.GetChild(transform.childCount-1).position = (allMarkers[AdderCucle].transform.position + transform.position)/2;
+                    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                     if (oldName != allMarkers[AdderCucle].name) //&& allMarkers[AdderCucle].GetComponent<DistanceEventMaster>().IndicatorMeshTest.enabled
                     {
                         oldMarker = allMarkers[AdderCucle];
                         oldName = allMarkers[AdderCucle].name;
 
                         Debug.Log("<color=green>CollisionWidth: </color>" + allMarkers[AdderCucle].name);
-                        AllVariantsActionsBaseNameSort(allMarkers[AdderCucle].gameObject.name); // допустим взаимодействуем с астеройдом пишем сюда имя астеройда
+                        AllVariantsActionsBaseNameSort(allMarkers[AdderCucle].gameObject.name); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         //DebugTXT[(int)UnityEngine.Random.Range(0,20)].text = "" + allMarkers[AdderCucle].name + " || " + transform.position;
                         //DebugUniqueTXT.text = this.gameObject.name + " || " + allMarkers[AdderCucle].name + " || " + transform.position;
                         oldObjGeom = allMarkers[AdderCucle].transform.GetChild(0).gameObject;
@@ -77,16 +80,17 @@ public class DistanceEventMaster : MonoBehaviour
 
                 }
             }
-            // Если отдалились то у этого обжекта выводим имя
+            // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
             if (dist > DistanceAction && allMarkers[AdderCucle].name != transform.gameObject.name)
             {
                 if (oldName == allMarkers[AdderCucle].name) //&& allMarkers[AdderCucle].GetComponent<DistanceEventMaster>().IndicatorMeshTest.enabled
                 {
-
+                    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+                    transform.GetChild(transform.childCount-1).localPosition = Vector3.zero;
                     //oldMarker = null;
                     oldName = " ";
                     Debug.Log("<color=yellow>CollisionWidth: </color>" + allMarkers[AdderCucle].name);
-                    DistantedOffMarker(allMarkers[AdderCucle].gameObject.name); // отдалились 
+                    DistantedOffMarker(allMarkers[AdderCucle].gameObject.name); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
                                                                                 //if (oldObjGeom != null)
                 }
             }
@@ -101,8 +105,8 @@ public class DistanceEventMaster : MonoBehaviour
     }
     void InvMadkerDistDal()
     {      transform.position = new Vector3(UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999), UnityEngine.Random.Range(-999, 999));  }
-    // сортируем массив по имени
-    void AllVariantsActionsBaseNameSort(string nam) // выполняем когда приблизили к маркеру
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    void AllVariantsActionsBaseNameSort(string nam) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         for (int i = 0; i < AllVariantsActionsBase.Count; i++)
         {
@@ -110,22 +114,22 @@ public class DistanceEventMaster : MonoBehaviour
             {
                // DebugTXT[1].text = "AllVar " + nam; DebugTXT[2].text = "AllVar " + AllVariantsActionsBase[i].name + " || " + transform.position;
                 AnimIndex = AllVariantsActionsBase[i].AnimIndexID;
-                this.Invoke(AllVariantsActionsBase[i].ParentObjFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayA); // парент функ
-                this.Invoke(AllVariantsActionsBase[i].AnimPlayFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayB); // Аним функ
-                this.Invoke(AllVariantsActionsBase[i].BaseFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayС); // Аниматор функ
+                this.Invoke(AllVariantsActionsBase[i].ParentObjFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayA); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+                this.Invoke(AllVariantsActionsBase[i].AnimPlayFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayB); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+                this.Invoke(AllVariantsActionsBase[i].BaseFunc, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayC); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
               
             }
         }
     }
-    void DistantedOffMarker(string nam) // выполняем отдалились от маркера
+    void DistantedOffMarker(string nam) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         for (int i = 0; i < AllVariantsActionsBase.Count; i++)
         {
             if (AllVariantsActionsBase[i].name == nam)
             {
               //  DebugTXT[1].text = "AllVar " + nam; DebugTXT[2].text = "AllVar " + AllVariantsActionsBase[i].name + " || " + transform.position;          
-                this.Invoke(AllVariantsActionsBase[i].FuncOtdalF_A, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayE); // парент функ
-                this.Invoke(AllVariantsActionsBase[i].FuncOtdalF_B, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayF); // Аним функ
+                this.Invoke(AllVariantsActionsBase[i].FuncOtdalF_A, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayE); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+                this.Invoke(AllVariantsActionsBase[i].FuncOtdalF_B, allMarkers[AdderCucle].transform, AllVariantsActionsBase[i].delayF); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
 
             }
@@ -138,45 +142,45 @@ public class DistanceEventMaster : MonoBehaviour
     public class ActionsWhenCollision
     {
         [SerializeField]
-        [Header("имя обекта на которое мы производим воздействие")]
-        public string name; // имя обекта на которое мы производим воздействие
-        //[Header("Если заполнено то с этим обектом тоже выполняем взаимодействие")]
+        [Header("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
+        public string name; // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        //[Header("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
         //public string thisName; //
 
-        [Header("Функция которую мы выполняем с дочерним обжектом и время через (парент)")]
+        [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ)")]
         public string ParentObjFunc = "NullFunc"; public float delayA = 0.01f;
-       // [Header("Анимированный индекс обжект с анимацией")]
+       // [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
         public int AnimIndexID;
-        [Header("Вторая Функция которую мы выполняем с дочерним обжектом и время через (запуск анимации)")]
+        [Header("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)")]
         public string AnimPlayFunc = "NullFunc"; public float delayB = 0.01f;
-        [Header("Базовая Функция которую мы выполняем с дочерним обжектом и время через (аниматор точка плей)")]
-        public string BaseFunc = "NullFunc"; public float delayС = 0.01f;
-        // возможности при взаимодействии: 1 запуск анимации 2 выполнение какой либо инвоук функции через стринг список функций снизу
+        [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)")]
+        public string BaseFunc = "NullFunc"; public float delayC = 0.01f;
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 1 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
 
-        [Header("Отдалили функция Первая")]
+        [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ")]
         public string FuncOtdalF_A = "NullFunc"; public float delayE = 2.5f;
-        [Header("Отдалили функция Вторая")]
+        [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ")]
         public string FuncOtdalF_B = "NullFunc"; public float delayF = 4.5f;
 
     }
 
 
-    public void NullFunc(Transform isOpenClose) {    } // пустая функция заглушка
+    public void NullFunc(Transform isOpenClose) {    } // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-    public void SetParentObject(Transform MainObj) // парентим к
+    public void SetParentObject(Transform MainObj) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ
     {
         Debug.Log("<color=red>SetParentObject: </color>" + MainObj.gameObject.name);
       //  DebugTXT[3].text = "Parent  " + MainObj.gameObject.name;
-      MainObj.GetChild(0).SetParent(this.transform.GetChild(AnimIndex), true); // мы берем в маркере обжект который всегда в иерархии 0  и парентим его к анимированному поинту который всегда номер 1 имеет
+      MainObj.GetChild(0).SetParent(this.transform.GetChild(AnimIndex), true); // пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 0  пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 1 пїЅпїЅпїЅпїЅпїЅ
 
     }
-    public void PlayAnimation(Transform MainObj) // парентим к
+    public void PlayAnimation(Transform MainObj) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ
     {
         Debug.Log("<color=blue>PlayAnimation: </color>" + MainObj.gameObject.name);
 
     }
-    public void PlayAnimator(Transform MainObj) // парентим к
+    public void PlayAnimator(Transform MainObj) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ
     {
       //  DebugTXT[4].text = "PlayAnim  " + MainObj.gameObject.name;
         Debug.Log("<color=black>PlayAnimator: </color>" + MainObj.gameObject.name);
@@ -186,35 +190,62 @@ public class DistanceEventMaster : MonoBehaviour
         transform.GetChild(AnimIndex).GetComponent<Animator>().speed = 1.0f;
         try { for (int ai = 0; ai < AnimPoint.Length; ai++)  AnimPoint[ai].GetComponent<AnimatorFunc>().PlayStopAnimator(); } catch { }
     }
-    // cписок функций что делаем в случае разрыва связей
-    public void DeParent(Transform poss) // убираем парент
-    {  //  трали вали куча кода
+    // cпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    public void DeParent(Transform poss) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    {  //  пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         Debug.Log("<color=red>DeParent: </color>" + poss.gameObject.name);
         poss.SetParent(null);
     }
 
-    public void GrozaInCiclonFunctionOn(Transform MainObj) // выполняем это на самом обекте на котором скрипт
-    { transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(true); Debug.Log("<color=red>GrozaInCiclonFunctionOn: </color>" + MainObj.gameObject.name);  }// гроза  
-    public void GrozaInCiclonFunctionOff(Transform MainObj) // выполняем это на самом обекте на котором скрипт
-    { transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(false); }// гроза  
-    // возвращаем планету на место при разрыве маркеров их связи по расстоянию
-    public void ReturnPlanetParent(Transform pos) // убираем парент
-    {  //  трали вали куча кода
+    public void GrozaInCiclonFunctionOn(Transform MainObj) //РѕР±С‰Р°СЏ СЂРµР°РєС†РёСЏ РЅР° СЃРІРµРґРµРЅРёРµ РєР°СЂС‚РѕС‡РєРё СЃ РїРѕРіРѕРґРѕР№
+    {
+        StartCoroutine(SmoothLerp(3f, transform.GetChild(transform.childCount - 1).position)); // СЃРґРІРёРіР°РµРј Р·Р° РёРЅРґРёРєС‚РѕСЂРѕРј РјРµС€РµРј РЅР°С€ РѕР¶РµРєС‚
+        transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(true);     // Р°РєС‚РёРІРёСЂРѕРІР°Р»Рё Р°РЅРёРјР°С†РёСЋ
+        Debug.Log("<color=red>GrozaInCiclonFunctionOn: </color>" + MainObj.gameObject.name);
+    }// 
+
+    public void GrozaInCiclonFunctionOff(Transform MainObj) //РѕР±С‰Р°СЏ СЂРµР°РєС†РёСЏ РЅР° СЂР°Р·РІРµРґРµРЅРёРµ РєР°СЂС‚РѕС‡РєРё СЃ РїРѕРіРѕРґРѕР№
+    {
+        StartCoroutine(SmoothLerp(3f, transform.position));
+        transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(false); 
+    } 
+    public void ListopadON(Transform MainObj) { GameObject.Find("Listopad10").GetComponent<ParticleSystemForceField>().enabled = true; Debug.Log("<color=red>ListopadON: </color>");  }
+    public void ListopadOFF(Transform MainObj) { GameObject.Find("Listopad10").GetComponent<ParticleSystemForceField>().enabled = false; }
+
+    public void TornadoAnimON(Transform MainObj) { StartCoroutine(SmoothLerp(3f, MainObj.transform.position)); GameObject.Find("TornadoAnim").GetComponent<Animator>().enabled = true; Debug.Log("<color=red>AnimatorTornadoON: </color>"); }
+    public void TornadoAnimOFF(Transform MainObj) { StartCoroutine(SmoothLerp(3f, transform.position));  GameObject.Find("TornadoAnim").GetComponent<Animator>().enabled = false; }
+
+    private IEnumerator SmoothLerp(float time, Vector3 finalPos) // СЃРіР»Р°Р¶РёРІР°РµРј РїРѕР·РёС†РёСЋ СЌС„С„РµРєС‚Р°
+    {
+        Vector3 startingPos = transform.GetChild(0).position;
+        //Vector3 finalPos = transform.GetChild(0).position + (transform.GetChild(0).forward * 5);
+        float elapsedTime = 0;
+
+        while (elapsedTime < time)
+        {
+            transform.GetChild(0).position = Vector3.Lerp(startingPos, finalPos, (elapsedTime / time));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+    }
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    public void ReturnPlanetParent(Transform pos) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    {  //  пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         Debug.Log(thisMainObj.name + "<color=black> ReturnPlanetParent: </color>" + oldObjGeom.name + " || " + oldMarker.name);
         oldObjGeom.transform.SetParent(oldMarker.transform,false);
         oldObjGeom.transform.SetSiblingIndex(0);
         oldObjGeom.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f); oldObjGeom.transform.localScale = Vector3.one;
-        // спрашиваем майн обжект у скрипта другого обжекта
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
     }
 
-    public void ReturnPlanetOnMarkerLost() // возвращаем планету если маркер скрылся
-    {  //  трали вали куча кода
+    public void ReturnPlanetOnMarkerLost() // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    {  //  пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         //Debug.Log(thisMainObj.name + "<color=black> ReturnPlanetParent: </color>" + oldObjGeom.name + " || " + oldMarker.name);
         thisMainObj.transform.SetParent(transform, false);
         thisMainObj.transform.SetSiblingIndex(0);
         thisMainObj.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f); oldObjGeom.transform.localScale = Vector3.one;
-        // спрашиваем майн обжект у скрипта другого обжекта
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
     }
 }

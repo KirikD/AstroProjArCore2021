@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 2775743416590998775}
   - component: {fileID: 8369427128254226017}
   - component: {fileID: -649427474068339547}
+  - component: {fileID: -8244969210596494269}
   m_Layer: 0
   m_Name: Tsunami4
   m_TagString: Untagged
@@ -382,6 +383,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   urlStr: http://kirikd.ru/AstroProject/WetherAudio/Tsunami 1(pogoda).mp3
   source: {fileID: 0}
+  onlyOnceClipPlay: {fileID: 0}
+--- !u!114 &-8244969210596494269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3045561720228294165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c588785240264b4cb544397bca6892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisabObj: []
+  planetsNames: []
 --- !u!1 &3811390870543754982
 GameObject:
   m_ObjectHideFlags: 0

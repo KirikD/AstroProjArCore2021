@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 642790424768078551}
   - component: {fileID: -9160830920199856388}
   - component: {fileID: 6580226024772779669}
+  - component: {fileID: -7837096228272732096}
   m_Layer: 0
   m_Name: SevernoeSianie12
   m_TagString: Untagged
@@ -4829,6 +4830,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   urlStr: http://kirikd.ru/AstroProject/WetherAudio/Zorza polarne 1(pogoda).mp3
   source: {fileID: 0}
+  onlyOnceClipPlay: {fileID: 0}
+--- !u!114 &-7837096228272732096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4628451864795547667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c588785240264b4cb544397bca6892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisabObj: []
+  planetsNames: []
 --- !u!1001 &2197351913872219766
 PrefabInstance:
   m_ObjectHideFlags: 0

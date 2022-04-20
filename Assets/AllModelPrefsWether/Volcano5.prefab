@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2175661344844285658}
   - component: {fileID: 4905371043382120318}
   - component: {fileID: -5576794057833907278}
+  - component: {fileID: 2582509200524925396}
   m_Layer: 0
   m_Name: Volcano5
   m_TagString: Untagged
@@ -162,6 +163,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   urlStr: http://kirikd.ru/AstroProject/WetherAudio/Wulkan 1(pogoda).mp3
   source: {fileID: 0}
+  onlyOnceClipPlay: {fileID: 0}
+--- !u!114 &2582509200524925396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364847590514325060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c588785240264b4cb544397bca6892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisabObj: []
+  planetsNames: []
 --- !u!1 &3341681252421997100
 GameObject:
   m_ObjectHideFlags: 0

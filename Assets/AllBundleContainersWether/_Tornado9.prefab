@@ -28,7 +28,8 @@ Transform:
   m_GameObject: {fileID: 2942609237186760557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2942609237992436964}
   - {fileID: 2942609238373599547}
@@ -46,6 +47,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -109,11 +111,23 @@ MonoBehaviour:
   - {fileID: 0}
   AnimIndex: 0
   allMarkers: []
-  DistanceAction: 0.12
+  DistanceAction: 0.14
   AllVariantsActionsBase:
-  - name: sdfsd
+  - name: _Listopad10
     ParentObjFunc: GrozaInCiclonFunctionOn
-    delayA: 0.1
+    delayA: 0.01
+    AnimIndexID: 1
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Ice8
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
     AnimIndexID: 0
     AnimPlayFunc: NullFunc
     delayB: 0.01
@@ -122,7 +136,115 @@ MonoBehaviour:
     FuncOtdalF_A: NullFunc
     delayE: 2
     FuncOtdalF_B: GrozaInCiclonFunctionOff
-    delayF: 2
+    delayF: 0.25
+  - name: _ Groza1
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Cloud3
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Rain15
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Sun14
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Raduga13
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Tsunami4
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Wolkano5
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Snow6
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 2
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
+  - name: _Snezinka7
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 3
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 2
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.25
 --- !u!1 &2942609237992436967
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +274,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2942609237186760567}
   m_RootOrder: 0
@@ -238,6 +361,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2942609237186760567}
   m_RootOrder: 1
@@ -261,6 +385,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

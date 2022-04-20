@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 8656345560595098790}
   - component: {fileID: 7130932660026658466}
   - component: {fileID: 4018694836635000996}
+  - component: {fileID: 3934661650828605877}
   m_Layer: 0
   m_Name: SoftSnowShuriken6
   m_TagString: Untagged
@@ -5093,6 +5094,20 @@ MonoBehaviour:
   urlStr: "http://kirikd.ru/AstroProject/WetherAudio/\u015Anieg 1(pogoda).mp3"
   source: {fileID: 0}
   onlyOnceClipPlay: {fileID: 0}
+--- !u!114 &3934661650828605877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8656345561440957829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c588785240264b4cb544397bca6892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisabObj: []
+  planetsNames: []
 --- !u!1001 &584064557127034505
 PrefabInstance:
   m_ObjectHideFlags: 0

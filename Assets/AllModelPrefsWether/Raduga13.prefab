@@ -4774,6 +4774,7 @@ GameObject:
   - component: {fileID: 5199495926048990109}
   - component: {fileID: -247093032691802589}
   - component: {fileID: -566036220389913422}
+  - component: {fileID: 2123993439310491079}
   m_Layer: 0
   m_Name: Raduga13
   m_TagString: Untagged
@@ -4921,6 +4922,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   urlStr: "http://kirikd.ru/AstroProject/WetherAudio/T\u0119cza 1(pogoda).mp3"
   source: {fileID: 0}
+  onlyOnceClipPlay: {fileID: 0}
+--- !u!114 &2123993439310491079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5199495926048990104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c588785240264b4cb544397bca6892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisabObj: []
+  planetsNames: []
 --- !u!1001 &3230022380872581232
 PrefabInstance:
   m_ObjectHideFlags: 0
