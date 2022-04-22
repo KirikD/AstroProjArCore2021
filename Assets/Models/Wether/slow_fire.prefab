@@ -49,7 +49,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 0
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -9515,6 +9515,7 @@ GameObject:
   - component: {fileID: 7442368182069483730}
   - component: {fileID: 7442368182050086292}
   - component: {fileID: 7442368182049989684}
+  - component: {fileID: 3879531491808103902}
   m_Layer: 0
   m_Name: slow_fire
   m_TagString: Untagged
@@ -9562,7 +9563,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 0
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -14223,6 +14224,26 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!95 &3879531491808103902
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442368182069511410}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0758043c563138c41921f759516b8af6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7442368182069511412
 GameObject:
   m_ObjectHideFlags: 0
@@ -14272,7 +14293,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 0
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -18963,7 +18984,7 @@ GameObject:
   - component: {fileID: 8735530306479815023}
   - component: {fileID: 8735530306479767759}
   m_Layer: 0
-  m_Name: main_core
+  m_Name: main_corefgh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23977,7 +23998,7 @@ GameObject:
   - component: {fileID: 8735530306479814983}
   - component: {fileID: 8735530306479767591}
   m_Layer: 0
-  m_Name: main_core
+  m_Name: main_coreAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28991,7 +29012,7 @@ GameObject:
   - component: {fileID: 8735530306479814977}
   - component: {fileID: 8735530306479767585}
   m_Layer: 0
-  m_Name: main_core
+  m_Name: main_coreZXC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34005,7 +34026,7 @@ GameObject:
   - component: {fileID: 8735530306479815001}
   - component: {fileID: 8735530306479767609}
   m_Layer: 0
-  m_Name: main_core
+  m_Name: main_coreRTY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39019,7 +39040,7 @@ GameObject:
   - component: {fileID: 8735530306479815009}
   - component: {fileID: 8735530306479767745}
   m_Layer: 0
-  m_Name: main_core
+  m_Name: main_coresdf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

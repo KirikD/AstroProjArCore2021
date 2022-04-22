@@ -116,7 +116,7 @@ Transform:
   m_GameObject: {fileID: 8841023133461665492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8841023133363219006}
@@ -212,18 +212,18 @@ MonoBehaviour:
     delayE: 2
     FuncOtdalF_B: GrozaInCiclonFunctionOff
     delayF: 2
-  - name: asdsdfgsdgfsdbg
-    ParentObjFunc: NullFunc
+  - name: _Wolkano5
+    ParentObjFunc: GrozaInCiclonFunctionOn
     delayA: 0.1
     AnimIndexID: 1
-    AnimPlayFunc: NullFunc
+    AnimPlayFunc: WolkPlayAnimON
     delayB: 0.01
     BaseFunc: NullFunc
     delayC: 0.01
-    FuncOtdalF_A: NullFunc
-    delayE: 2
-    FuncOtdalF_B: NullFunc
-    delayF: 2
+    FuncOtdalF_A: WolkPlayAnimOFF
+    delayE: 0.285
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
 --- !u!1 &8841023134048978213
 GameObject:
   m_ObjectHideFlags: 0

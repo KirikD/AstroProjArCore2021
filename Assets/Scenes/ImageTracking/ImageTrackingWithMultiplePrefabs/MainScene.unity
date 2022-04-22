@@ -3504,6 +3504,7 @@ GameObject:
   - component: {fileID: 486962686}
   - component: {fileID: 486962688}
   - component: {fileID: 486962687}
+  - component: {fileID: 486962689}
   m_Layer: 5
   m_Name: RazdelText (1)
   m_TagString: Untagged
@@ -3564,7 +3565,30 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0414\u0430\u043D\u043D\u043E\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435
+  m_Text: "Uwaga! Ta aplikacja wykorzystuje technologi\u0119 rozszerzonej rzeczywisto\u015Bci.
+    Nie zapomnij o otaczaj\u0105cej Ci\u0119 rzeczywisto\u015Bci i znajduj\u0105cych
+    si\u0119 w niej przedmiotach. Zaleca si\u0119 stosowanie pod nadzorem osoby doros\u0142ej!"
+--- !u!222 &486962688
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486962685}
+  m_CullTransparentMesh: 1
+--- !u!114 &486962689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486962685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddc4bf7f204ca64da3387287b32a97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RussianLang: "\u0414\u0430\u043D\u043D\u043E\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435
     \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u044E
     \u0434\u043E\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u043E\u0439 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438.
     \u041D\u0435 \u0437\u0430\u0431\u044B\u0432\u0430\u0439\u0442\u0435 \u043E\u0431
@@ -3574,14 +3598,18 @@ MonoBehaviour:
     \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435
     \u043F\u043E\u0434 \u043F\u0440\u0438\u0441\u043C\u043E\u0442\u0440\u043E\u043C
     \u0432\u0437\u0440\u043E\u0441\u043B\u044B\u0445!"
---- !u!222 &486962688
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486962685}
-  m_CullTransparentMesh: 1
+  PolskiLang: "Ta aplikacja wykorzystuje technologi\u0119 rozszerzonej rzeczywisto\u015Bci.
+    Nie zapomnij o otaczaj\u0105cej Ci\u0119 rzeczywisto\u015Bci i znajduj\u0105cych
+    si\u0119 w niej przedmiotach. Zaleca si\u0119 stosowanie pod nadzorem osoby doros\u0142ej!"
+  GermanyLang: 
+  FranchLang: 
+  AddLangA: 
+  AddLangB: 
+  AddLangC: 
+  AddLangD: 
+  AddLangE: 
+  EndLangF: 
+  CurLangTXT: {fileID: 486962687}
 --- !u!1 &506034550
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,7 +4238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &681564769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5183,7 +5211,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041F\u0440\u0438\u0432\u0435\u0442!"
+  m_Text: Linky 5D
 --- !u!222 &793391494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7145,6 +7173,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1319372838}
+        m_TargetAssemblyTypeName: LangsSetter, Assembly-CSharp
+        m_MethodName: ChoseLang
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PolskiLang
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &1260190247
 Animator:
   serializedVersion: 4
@@ -7889,6 +7929,7 @@ GameObject:
   - component: {fileID: 1319372835}
   - component: {fileID: 1319372837}
   - component: {fileID: 1319372836}
+  - component: {fileID: 1319372838}
   m_Layer: 5
   m_Name: hd
   m_TagString: Untagged
@@ -7949,7 +7990,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430 AR \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0443"
+  m_Text: __
 --- !u!222 &1319372837
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7958,6 +7999,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319372834}
   m_CullTransparentMesh: 1
+--- !u!114 &1319372838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319372834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddc4bf7f204ca64da3387287b32a97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RussianLang: "\u041D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430 AR
+    \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0443"
+  PolskiLang: "Skieruj aparat na kart\u0119 AR"
+  GermanyLang: 
+  FranchLang: 
+  AddLangA: 
+  AddLangB: 
+  AddLangC: 
+  AddLangD: 
+  AddLangE: 
+  EndLangF: 
+  CurLangTXT: {fileID: 1319372836}
 --- !u!1 &1336750631
 GameObject:
   m_ObjectHideFlags: 0
@@ -10298,6 +10363,7 @@ GameObject:
   - component: {fileID: 1665042936}
   - component: {fileID: 1665042938}
   - component: {fileID: 1665042937}
+  - component: {fileID: 1665042939}
   m_Layer: 5
   m_Name: RazdelText
   m_TagString: Untagged
@@ -10358,7 +10424,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u043D\u0438\u043C\u0430\u043D\u0438\u0435!"
+  m_Text: Uwaga!
 --- !u!222 &1665042938
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10367,6 +10433,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665042935}
   m_CullTransparentMesh: 1
+--- !u!114 &1665042939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddc4bf7f204ca64da3387287b32a97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RussianLang: "\u0412\u043D\u0438\u043C\u0430\u043D\u0438\u0435!"
+  PolskiLang: Uwaga!
+  GermanyLang: 
+  FranchLang: 
+  AddLangA: 
+  AddLangB: 
+  AddLangC: 
+  AddLangD: 
+  AddLangE: 
+  EndLangF: 
+  CurLangTXT: {fileID: 1665042937}
 --- !u!1 &1718672186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8604608276641685785, guid: 424dfc7ef40efa04485c7c76ae0ed74a,
@@ -11511,6 +11600,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1319372838}
+        m_TargetAssemblyTypeName: LangsSetter, Assembly-CSharp
+        m_MethodName: ChoseLang
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: RussianLang
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!95 &1930586161

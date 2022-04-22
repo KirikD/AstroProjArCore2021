@@ -215,6 +215,10 @@ public class DistanceEventMaster : MonoBehaviour
     public void TornadoAnimON(Transform MainObj) { StartCoroutine(SmoothLerp(3f, MainObj.transform.position)); GameObject.Find("TornadoAnim").GetComponent<Animator>().enabled = true; Debug.Log("<color=red>AnimatorTornadoON: </color>"); }
     public void TornadoAnimOFF(Transform MainObj) { StartCoroutine(SmoothLerp(3f, transform.position));  GameObject.Find("TornadoAnim").GetComponent<Animator>().enabled = false; }
 
+    public void WolkPlayAnimON(Transform MainObj) { MainObj.transform.GetChild(0).transform.GetChild(0).GetComponent<Animator>().enabled = true; GameObject.Find("slow_fire(Clone)").GetComponent<Animator>().enabled = true; }
+    public void WolkPlayAnimOFF(Transform MainObj) { MainObj.transform.GetChild(0).transform.GetChild(0).GetComponent<Animator>().enabled = false; }
+
+
     private IEnumerator SmoothLerp(float time, Vector3 finalPos) // сглаживаем позицию эффекта
     {
         Vector3 startingPos = transform.GetChild(0).position;

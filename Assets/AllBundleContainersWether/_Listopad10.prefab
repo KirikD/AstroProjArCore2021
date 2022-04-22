@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 6110458404417040459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6110458404671012807}
@@ -181,8 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5859ad5190b98d14bbe69cc02cc0187d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IndicatorMeshTest: {fileID: 8798366392476819860, guid: e68ba7756ce4ed3459515e2779215e2b,
-    type: 3}
+  IndicatorMeshTest: {fileID: 6110458403898354895}
   DebugTXT:
   - {fileID: 0}
   - {fileID: 0}
@@ -207,6 +206,102 @@ MonoBehaviour:
     FuncOtdalF_A: GrozaInCiclonFunctionOff
     delayE: 0.1
     FuncOtdalF_B: ListopadOFF
+    delayF: 0.2
+  - name: _ Groza1
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
+  - name: _Cloud3
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
+  - name: _Rain15
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 1
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
+  - name: _Sun14
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
+  - name: _Raduga13
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 3
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
+  - name: _SevernoeSianie12
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 0
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
+  - name: _Snow6
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 2
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
+    delayF: 0.2
+  - name: _Snezinka7
+    ParentObjFunc: GrozaInCiclonFunctionOn
+    delayA: 0.01
+    AnimIndexID: 2
+    AnimPlayFunc: NullFunc
+    delayB: 0.01
+    BaseFunc: NullFunc
+    delayC: 0.01
+    FuncOtdalF_A: NullFunc
+    delayE: 0.1
+    FuncOtdalF_B: GrozaInCiclonFunctionOff
     delayF: 0.2
 --- !u!1 &6110458404671012804
 GameObject:
