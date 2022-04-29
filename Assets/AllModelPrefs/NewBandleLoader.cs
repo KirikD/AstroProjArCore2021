@@ -14,7 +14,7 @@ public class NewBandleLoader : MonoBehaviour
     public string BundleLocalLoadPath = "?? ????? ?????????! ???? ?????????? ????!";
     public string PrefabGameobjectName = "asteroids";
     // ?????? ???? ?????? ?????? ????? ??????
-    public string AssetDatBaseVersion = "PP";
+    public string AssetDatBaseVersion = "D";
     public bool isReservPref = false;
 
     public Text debtxtG;
@@ -27,7 +27,7 @@ public class NewBandleLoader : MonoBehaviour
 
         if (isReservPref == false)
         {
-            AssetDatBaseVersion = "PP";
+            AssetDatBaseVersion = "D";
             // ????????? ??? ????? ?? ???? ??????
             Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.1f, 1.0f));
 
@@ -36,7 +36,7 @@ public class NewBandleLoader : MonoBehaviour
         }
         if (isReservPref)
         {
-            AssetDatBaseVersion = "PP";
+            AssetDatBaseVersion = "D";
             Invoke(nameof(LoadAssetBundleFromURL), UnityEngine.Random.Range(0.9f, 2.0f));// ????????? ??? ????? ?? ???? ??????
 
             //var myLoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "cosmos"));
@@ -64,10 +64,10 @@ public class NewBandleLoader : MonoBehaviour
     void LoadAssetBundleFromURL()
     {
         // ????????? ??????
-        if (PlayerPrefs.GetInt(BundleFileName + AssetDatBaseVersion) != 31)
+        if (PlayerPrefs.GetInt(BundleFileName + AssetDatBaseVersion) != 35)
         {
             Debug.Log("OnceAlltime");
-            PlayerPrefs.SetInt(BundleFileName + AssetDatBaseVersion, 31);
+            PlayerPrefs.SetInt(BundleFileName + AssetDatBaseVersion, 35);
             StartCoroutine(downloadAsset(UrlBundleDawnload));
         }
     }
@@ -121,7 +121,7 @@ public class NewBandleLoader : MonoBehaviour
 
             //????? ???????? ??????? ???????????? ???? ???????! 
             LoaderUI.transform.GetChild(4).gameObject.SetActive(true);
-            Invoke(nameof(ReloadAllLevel), 2.2f);
+            Invoke(nameof(ReloadAllLevel), 0.25f);
         }
         catch (Exception e)
         {

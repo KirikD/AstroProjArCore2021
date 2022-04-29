@@ -175,11 +175,8 @@ public class DistanceEventMaster : MonoBehaviour
       MainObj.GetChild(0).SetParent(this.transform.GetChild(AnimIndex), true); // �� ����� � ������� ������ ������� ������ � �������� 0  � �������� ��� � �������������� ������ ������� ������ ����� 1 �����
 
     }
-    public void PlayAnimation(Transform MainObj) // �������� �
-    {
-        Debug.Log("<color=blue>PlayAnimation: </color>" + MainObj.gameObject.name);
-
-    }
+    public void PlayAnimation() // �������� �
+    { StartCoroutine(SmoothLerp(3f, transform.position)); }
     public void PlayAnimator(Transform MainObj) // �������� �
     {
       //  DebugTXT[4].text = "PlayAnim  " + MainObj.gameObject.name;
@@ -202,18 +199,21 @@ public class DistanceEventMaster : MonoBehaviour
         StartCoroutine(SmoothLerp(3f, transform.GetChild(transform.childCount - 1).position)); // сдвигаем за индиктором мешем наш ожект
         transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(true);     // активировали анимацию
         Debug.Log("<color=red>GrozaInCiclonFunctionOn: </color>" + MainObj.gameObject.name);
-    }// 
+        CancelInvoke("PlayAnimation");
+    }//  
 
     public void GrozaInCiclonFunctionOff(Transform MainObj) //общая реакция на разведение карточки с погодой
     {
-        StartCoroutine(SmoothLerp(3f, transform.position));
+        StartCoroutine(SmoothLerp(3f, transform.position)); StartCoroutine(SmoothLerpScal(3f, Vector3.one)); Invoke("PlayAnimation",4);// вернули размер и позицию
         transform.GetChild(0).GetChild(0).GetChild(AnimIndex).gameObject.SetActive(false); 
-    } 
+    }
+    public void SizeSmallON(Transform MainObj) {  StartCoroutine(SmoothLerpScal(3f, Vector3.one * 0.65f)); }
+    public void SizeBigON(Transform MainObj) { StartCoroutine(SmoothLerpScal(3f, Vector3.one * 1.35f)); }// уменьшили размер  public void SizeSmallOFF(Transform MainObj) { StartCoroutine(SmoothLerp(3f, Vector3.one )); }// вернули размер
     public void ListopadON(Transform MainObj) { GameObject.Find("Listopad10").GetComponent<ParticleSystemForceField>().enabled = true; Debug.Log("<color=red>ListopadON: </color>");  }
     public void ListopadOFF(Transform MainObj) { GameObject.Find("Listopad10").GetComponent<ParticleSystemForceField>().enabled = false; }
 
     public void TornadoAnimON(Transform MainObj) { StartCoroutine(SmoothLerp(3f, MainObj.transform.position)); GameObject.Find("TornadoAnim").GetComponent<Animator>().enabled = true; Debug.Log("<color=red>AnimatorTornadoON: </color>"); }
-    public void TornadoAnimOFF(Transform MainObj) { StartCoroutine(SmoothLerp(3f, transform.position));  GameObject.Find("TornadoAnim").GetComponent<Animator>().enabled = false; }
+    public void TornadoAnimOFF(Transform MainObj) { StartCoroutine(SmoothLerp(3f, transform.position));  GameObject.Find("TornadoAnim").GetComponent<Animator>().enabled = false; GameObject.Find("TornadoAnim").transform.localPosition = Vector3.zero; }
 
     public void WolkPlayAnimON(Transform MainObj) { MainObj.transform.GetChild(0).transform.GetChild(0).GetComponent<Animator>().enabled = true; GameObject.Find("slow_fire(Clone)").GetComponent<Animator>().enabled = true; }
     public void WolkPlayAnimOFF(Transform MainObj) { MainObj.transform.GetChild(0).transform.GetChild(0).GetComponent<Animator>().enabled = false; }
@@ -228,6 +228,20 @@ public class DistanceEventMaster : MonoBehaviour
         while (elapsedTime < time)
         {
             transform.GetChild(0).position = Vector3.Lerp(startingPos, finalPos, (elapsedTime / time));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    private IEnumerator SmoothLerpScal(float time, Vector3 finalPos) // сглаживаем позицию эффекта
+    {
+        Vector3 startingPos = transform.GetChild(0).localScale;
+        //Vector3 finalPos = transform.GetChild(0).position + (transform.GetChild(0).forward * 5);
+        float elapsedTime = 0;
+
+        while (elapsedTime < time)
+        {
+            transform.GetChild(0).localScale = Vector3.Lerp(startingPos, finalPos, (elapsedTime / time));
             elapsedTime += Time.deltaTime;
             yield return null;
         }
@@ -252,6 +266,8 @@ public class DistanceEventMaster : MonoBehaviour
         // ���������� ���� ������ � ������� ������� �������
 
     }
+    public void GrozaModelOff(Transform MainObj)  {  GameObject.Find("defaultVBNGrozaOfff").GetComponent<MeshRenderer>().enabled = false; }
+    public void GrozaModelOn(Transform MainObj) { GameObject.Find("defaultVBNGrozaOfff").GetComponent<MeshRenderer>().enabled = true; }
 }
 
 

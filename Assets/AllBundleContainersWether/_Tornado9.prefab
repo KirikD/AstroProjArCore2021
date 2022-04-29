@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2942609237186760557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2942609237992436964}
@@ -139,8 +139,8 @@ MonoBehaviour:
   - name: _ Groza1
     ParentObjFunc: GrozaInCiclonFunctionOn
     delayA: 0.01
-    AnimIndexID: 0
-    AnimPlayFunc: NullFunc
+    AnimIndexID: 1
+    AnimPlayFunc: SizeSmallON
     delayB: 0.01
     BaseFunc: NullFunc
     delayC: 0.01
@@ -151,7 +151,7 @@ MonoBehaviour:
   - name: _Cloud3
     ParentObjFunc: GrozaInCiclonFunctionOn
     delayA: 0.01
-    AnimIndexID: 0
+    AnimIndexID: 4
     AnimPlayFunc: NullFunc
     delayB: 0.01
     BaseFunc: NullFunc
@@ -175,7 +175,7 @@ MonoBehaviour:
   - name: _Sun14
     ParentObjFunc: GrozaInCiclonFunctionOn
     delayA: 0.01
-    AnimIndexID: 0
+    AnimIndexID: 99
     AnimPlayFunc: NullFunc
     delayB: 0.01
     BaseFunc: NullFunc
@@ -187,7 +187,7 @@ MonoBehaviour:
   - name: _Raduga13
     ParentObjFunc: GrozaInCiclonFunctionOn
     delayA: 0.01
-    AnimIndexID: 0
+    AnimIndexID: 4
     AnimPlayFunc: NullFunc
     delayB: 0.01
     BaseFunc: NullFunc
@@ -199,7 +199,7 @@ MonoBehaviour:
   - name: _Tsunami4
     ParentObjFunc: GrozaInCiclonFunctionOn
     delayA: 0.01
-    AnimIndexID: 0
+    AnimIndexID: 1
     AnimPlayFunc: NullFunc
     delayB: 0.01
     BaseFunc: NullFunc
@@ -211,12 +211,12 @@ MonoBehaviour:
   - name: _Wolkano5
     ParentObjFunc: GrozaInCiclonFunctionOn
     delayA: 0.01
-    AnimIndexID: 0
-    AnimPlayFunc: NullFunc
+    AnimIndexID: 99
+    AnimPlayFunc: TornadoAnimON
     delayB: 0.01
     BaseFunc: NullFunc
     delayC: 0.01
-    FuncOtdalF_A: NullFunc
+    FuncOtdalF_A: TornadoAnimOFF
     delayE: 2
     FuncOtdalF_B: GrozaInCiclonFunctionOff
     delayF: 0.25
